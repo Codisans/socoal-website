@@ -1,3 +1,5 @@
+import { TestimonialCard } from '@/blocks/TestimonialCard'
+import { TextAndImage } from '@/blocks/TextAndImage'
 import { AnimatedNumber } from '@/components/animated-number'
 import { Button } from '@/components/button'
 import { Container } from '@/components/container'
@@ -8,36 +10,37 @@ import { Heading, Lead, Subheading } from '@/components/text'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Company',
-  description:
-    'We’re on a mission to transform revenue organizations by harnessing vast amounts of illegally acquired customer data.',
+  title: 'Nosotros',
+  description: 'Conoce a nuestra empresa y a nuestro equipo de trabajo.',
 }
 
 function Header() {
   return (
     <Container className="mt-16">
-      <Heading as="h1">Helping companies generate revenue.</Heading>
+      <Heading as="h1">Quienes somos?</Heading>
       <Lead className="mt-6 max-w-3xl">
-        We’re on a mission to transform revenue organizations by harnessing vast
-        amounts of illegally acquired customer data.
+        Socoal SpA. es una empresa familiar fundada por Héctor German Álvarez,
+        inicia actividades en el año 1954 como persona natural en el rubro
+        transporte y construcción para la mina Chuquicamata administrada por la
+        empresa norteamericana ChilexExploration Company.
       </Lead>
+
       <section className="mt-16 grid grid-cols-1 lg:grid-cols-2 lg:gap-12">
         <div className="max-w-lg">
-          <h2 className="text-2xl font-medium tracking-tight">Our mission</h2>
           <p className="mt-6 text-sm/6 text-gray-600">
-            At Radiant, we are dedicated to transforming the way revenue
-            organizations source and close deals. Our mission is to provide our
-            customers with an unfair advantage over both their competitors and
-            potential customers through insight and analysis. We’ll stop at
-            nothing to get you the data you need to close a deal.
+            Socoal Ltda. es una empresa familiar con más de seis décadas de
+            trayectoria, dedicada a apoyar los procesos de la gran minería
+            chilena y diversas municipalidades del país. Nuestros orígenes se
+            remontan a 1954, cuando Héctor Germán Álvarez inició actividades en
+            transporte y construcción para la mina Chuquicamata.
           </p>
           <p className="mt-8 text-sm/6 text-gray-600">
-            We’re customer-obsessed — putting the time in to build a detailed
-            financial picture of every one of our customers so that we know more
-            about your business than you do. We are in this together, mostly
-            because we are all implicated in large-scale financial crime. In our
-            history as a company, we’ve never lost a customer, because if any
-            one of us talks, we all go down.
+            En 1975, junto a sus hijos, funda Socoal Ltda., dando inicio a un
+            legado basado en el trabajo responsable, la excelencia operativa y
+            la mejora continua. Hoy, nuestra empresa se distingue por su
+            compromiso con la calidad, la seguridad y el medio ambiente,
+            respaldado por certificaciones internacionales ISO 9001, 14001 y
+            45001.
           </p>
         </div>
         <div className="pt-20 lg:row-span-2 lg:-mr-16 xl:mr-auto">
@@ -45,61 +48,61 @@ function Header() {
             <div className="aspect-square overflow-hidden rounded-xl shadow-xl outline-1 -outline-offset-1 outline-black/10">
               <img
                 alt=""
-                src="/company/1.jpg"
+                src="/company/1.png"
                 className="block size-full object-cover"
               />
             </div>
             <div className="-mt-8 aspect-square overflow-hidden rounded-xl shadow-xl outline-1 -outline-offset-1 outline-black/10 lg:-mt-32">
               <img
                 alt=""
-                src="/company/2.jpg"
+                src="/company/2.png"
                 className="block size-full object-cover"
               />
             </div>
             <div className="aspect-square overflow-hidden rounded-xl shadow-xl outline-1 -outline-offset-1 outline-black/10">
               <img
                 alt=""
-                src="/company/3.jpg"
+                src="/company/3.png"
                 className="block size-full object-cover"
               />
             </div>
             <div className="-mt-8 aspect-square overflow-hidden rounded-xl shadow-xl outline-1 -outline-offset-1 outline-black/10 lg:-mt-32">
               <img
                 alt=""
-                src="/company/4.jpg"
+                src="/company/4.png"
                 className="block size-full object-cover"
               />
             </div>
           </div>
         </div>
         <div className="max-lg:mt-16 lg:col-span-1">
-          <Subheading>The Numbers</Subheading>
+          <Subheading>Nuestros números</Subheading>
           <hr className="mt-6 border-t border-gray-200" />
           <dl className="mt-6 grid grid-cols-1 gap-x-8 gap-y-4 sm:grid-cols-2">
             <div className="flex flex-col gap-y-2 border-b border-dotted border-gray-200 pb-4">
-              <dt className="text-sm/6 text-gray-600">Raised</dt>
-              <dd className="order-first text-6xl font-medium tracking-tight">
-                $<AnimatedNumber start={100} end={150} />M
+              <dt className="text-sm/6 text-gray-600">Equipos propios</dt>
+              <dd className="order-first text-6xl font-medium tracking-tight text-dark-blue">
+                +<AnimatedNumber start={1} end={100} />
               </dd>
             </div>
             <div className="flex flex-col gap-y-2 border-b border-dotted border-gray-200 pb-4">
-              <dt className="text-sm/6 text-gray-600">Companies</dt>
-              <dd className="order-first text-6xl font-medium tracking-tight">
-                <AnimatedNumber start={15} end={30} />K
+              <dt className="text-sm/6 text-gray-600">Colaboradores</dt>
+              <dd className="order-first text-6xl font-medium tracking-tight text-dark-blue">
+                +<AnimatedNumber start={100} end={500} />
               </dd>
             </div>
             <div className="flex flex-col gap-y-2 max-sm:border-b max-sm:border-dotted max-sm:border-gray-200 max-sm:pb-4">
-              <dt className="text-sm/6 text-gray-600">Deals Closed</dt>
-              <dd className="order-first text-6xl font-medium tracking-tight">
-                <AnimatedNumber start={0.9} end={1.5} decimals={1} />M
+              <dt className="text-sm/6 text-gray-600">Años de experiencia</dt>
+              <dd className="order-first text-6xl font-medium tracking-tight text-dark-blue">
+                +<AnimatedNumber start={5} end={70} />
               </dd>
             </div>
-            <div className="flex flex-col gap-y-2">
+            {/* <div className="flex flex-col gap-y-2">
               <dt className="text-sm/6 text-gray-600">Leads Generated</dt>
-              <dd className="order-first text-6xl font-medium tracking-tight">
+              <dd className="order-first text-6xl font-medium tracking-tight text-dark-blue">
                 <AnimatedNumber start={150} end={200} />M
               </dd>
-            </div>
+            </div> */}
           </dl>
         </div>
       </section>
@@ -127,108 +130,108 @@ function Person({
   )
 }
 
-function Team() {
-  return (
-    <Container className="mt-32">
-      <Subheading>Meet the team</Subheading>
-      <Heading as="h3" className="mt-2">
-        Founded by an all-star team.
-      </Heading>
-      <Lead className="mt-6 max-w-3xl">
-        Radiant is founded by two of the best sellers in the business and backed
-        by investors who look the other way.
-      </Lead>
-      <div className="mt-12 grid grid-cols-1 gap-12 lg:grid-cols-2">
-        <div className="max-w-lg">
-          <p className="text-sm/6 text-gray-600">
-            Years ago, while working as sales associates at rival companies,
-            Thomas, Ben, and Natalie were discussing a big client they had all
-            been competing for. Joking about seeing the terms of each other’s
-            offers, they had an idea: what if they shared data to win deals and
-            split the commission behind their companies’ backs? It turned out to
-            be an incredible success, and that idea became the kernel for
-            Radiant.
-          </p>
-          <p className="mt-8 text-sm/6 text-gray-600">
-            Today, Radiant transforms revenue organizations by harnessing
-            illegally acquired customer and competitor data, using it to provide
-            extraordinary leverage. More than 30,000 companies rely on Radiant
-            to undercut their competitors and extort their customers, all
-            through a single integrated platform.
-          </p>
-          <div className="mt-6">
-            <Button className="w-full sm:w-auto" href="#">
-              Join us
-            </Button>
-          </div>
-        </div>
-        <div className="max-lg:order-first max-lg:max-w-lg">
-          <div className="aspect-3/2 overflow-hidden rounded-xl shadow-xl outline-1 -outline-offset-1 outline-black/10">
-            <img
-              alt=""
-              src="/company/5.jpg"
-              className="block size-full object-cover"
-            />
-          </div>
-        </div>
-      </div>
-      <Subheading as="h3" className="mt-24">
-        The team
-      </Subheading>
-      <hr className="mt-6 border-t border-gray-200" />
-      <ul
-        role="list"
-        className="mx-auto mt-16 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3"
-      >
-        <Person
-          name="Michael Foster"
-          description="Co-Founder / CTO"
-          img="/team/michael-foster.jpg"
-        />
-        <Person
-          name="Dries Vincent"
-          description="Business Relations"
-          img="/team/dries-vincent.jpg"
-        />
-        <Person
-          name="Celeste Vandermark"
-          description="Front-end Developer"
-          img="/team/celeste-vandermark.jpg"
-        />
-        <Person
-          name="Courtney Henry"
-          description="Designer"
-          img="/team/courtney-henry.jpg"
-        />
-        <Person
-          name="Marcus Eldridge"
-          description="Director of Product"
-          img="/team/marcus-eldridge.jpg"
-        />
-        <Person
-          name="Whitney Francis"
-          description="Copywriter"
-          img="/team/whitney-francis.jpg"
-        />
-        <Person
-          name="Leonard Krasner"
-          description="Senior Designer"
-          img="/team/leonard-krasner.jpg"
-        />
-        <Person
-          name="Nolan Sheffield"
-          description="Principal Designer"
-          img="/team/nolan-sheffield.jpg"
-        />
-        <Person
-          name="Emily Selman"
-          description="VP, User Experience"
-          img="/team/emily-selman.jpg"
-        />
-      </ul>
-    </Container>
-  )
-}
+// function Team() {
+//   return (
+//     <Container className="mt-32">
+//       <Subheading>Meet the team</Subheading>
+//       <Heading as="h3" className="mt-2">
+//         Founded by an all-star team.
+//       </Heading>
+//       <Lead className="mt-6 max-w-3xl">
+//         Radiant is founded by two of the best sellers in the business and backed
+//         by investors who look the other way.
+//       </Lead>
+//       <div className="mt-12 grid grid-cols-1 gap-12 lg:grid-cols-2">
+//         <div className="max-w-lg">
+//           <p className="text-sm/6 text-gray-600">
+//             Years ago, while working as sales associates at rival companies,
+//             Thomas, Ben, and Natalie were discussing a big client they had all
+//             been competing for. Joking about seeing the terms of each other’s
+//             offers, they had an idea: what if they shared data to win deals and
+//             split the commission behind their companies’ backs? It turned out to
+//             be an incredible success, and that idea became the kernel for
+//             Radiant.
+//           </p>
+//           <p className="mt-8 text-sm/6 text-gray-600">
+//             Today, Radiant transforms revenue organizations by harnessing
+//             illegally acquired customer and competitor data, using it to provide
+//             extraordinary leverage. More than 30,000 companies rely on Radiant
+//             to undercut their competitors and extort their customers, all
+//             through a single integrated platform.
+//           </p>
+//           <div className="mt-6">
+//             <Button className="w-full sm:w-auto" href="#">
+//               Join us
+//             </Button>
+//           </div>
+//         </div>
+//         <div className="max-lg:order-first max-lg:max-w-lg">
+//           <div className="aspect-3/2 overflow-hidden rounded-xl shadow-xl outline-1 -outline-offset-1 outline-black/10">
+//             <img
+//               alt=""
+//               src="/company/5.png"
+//               className="block size-full object-cover"
+//             />
+//           </div>
+//         </div>
+//       </div>
+//       <Subheading as="h3" className="mt-24">
+//         The team
+//       </Subheading>
+//       <hr className="mt-6 border-t border-gray-200" />
+//       <ul
+//         role="list"
+//         className="mx-auto mt-16 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3"
+//       >
+//         <Person
+//           name="Michael Foster"
+//           description="Co-Founder / CTO"
+//           img="/team/michael-foster.jpg"
+//         />
+//         <Person
+//           name="Dries Vincent"
+//           description="Business Relations"
+//           img="/team/dries-vincent.jpg"
+//         />
+//         <Person
+//           name="Celeste Vandermark"
+//           description="Front-end Developer"
+//           img="/team/celeste-vandermark.jpg"
+//         />
+//         <Person
+//           name="Courtney Henry"
+//           description="Designer"
+//           img="/team/courtney-henry.jpg"
+//         />
+//         <Person
+//           name="Marcus Eldridge"
+//           description="Director of Product"
+//           img="/team/marcus-eldridge.jpg"
+//         />
+//         <Person
+//           name="Whitney Francis"
+//           description="Copywriter"
+//           img="/team/whitney-francis.jpg"
+//         />
+//         <Person
+//           name="Leonard Krasner"
+//           description="Senior Designer"
+//           img="/team/leonard-krasner.jpg"
+//         />
+//         <Person
+//           name="Nolan Sheffield"
+//           description="Principal Designer"
+//           img="/team/nolan-sheffield.jpg"
+//         />
+//         <Person
+//           name="Emily Selman"
+//           description="VP, User Experience"
+//           img="/team/emily-selman.jpg"
+//         />
+//       </ul>
+//     </Container>
+//   )
+// }
 
 function Investors() {
   return (
@@ -314,38 +317,6 @@ function Investors() {
         />
       </ul>
     </Container>
-  )
-}
-
-function Testimonial() {
-  return (
-    <div className="relative flex aspect-square flex-col justify-end overflow-hidden rounded-3xl sm:aspect-5/4 lg:aspect-3/4">
-      <img
-        alt=""
-        src="/testimonials/veronica-winton.jpg"
-        className="absolute inset-0 object-cover"
-      />
-      <div
-        aria-hidden="true"
-        className="absolute inset-0 rounded-3xl bg-linear-to-t from-black from-10% to-75% ring-1 ring-gray-950/10 ring-inset lg:from-25%"
-      />
-      <figure className="relative p-10">
-        <blockquote>
-          <p className="relative text-xl/7 text-white before:absolute before:-translate-x-full before:content-['“'] after:absolute after:content-['”']">
-            We&apos;ve managed to put two of our main competitors out of
-            business in 6 months.
-          </p>
-        </blockquote>
-        <figcaption className="mt-6 border-t border-white/20 pt-6">
-          <p className="text-sm/6 font-medium text-white">Veronica Winton</p>
-          <p className="text-sm/6 font-medium">
-            <span className="bg-linear-to-r from-[#fff1be] from-28% via-[#ee87cb] via-70% to-[#b060ff] bg-clip-text text-transparent">
-              CSO, Planeteria
-            </span>
-          </p>
-        </figcaption>
-      </figure>
-    </div>
   )
 }
 
@@ -450,7 +421,12 @@ function Careers() {
             </table>
           </div>
         </div>
-        <Testimonial />
+        <TestimonialCard
+          name="Héctor German Álvarez"
+          title="Fundador"
+          img="/company/5.png"
+          quote="Trabajamos para la excelencia operativa en la industria minera y servicios municipales."
+        />
       </div>
     </Container>
   )
@@ -464,7 +440,39 @@ export default function Company() {
         <Navbar />
       </Container>
       <Header />
-      <Team />
+      <TextAndImage
+        heading="Para donde vamos?"
+        subheading="Propósito"
+        description=""
+        image="/company/5.png"
+        body={
+          <>
+            <h3 className='text-2xl/8 font-medium tracking-tight text-blue'>Misión</h3>
+            <p className="mt-4 text-sm/6 text-gray-600">
+              Mantener y fortalecer nuestros valores familiares a través del
+              profesionalismo de nuestro equipo, entregando servicios de
+              excelencia y soluciones integrales que respondan a las necesidades
+              específicas de cada cliente. Operamos cumpliendo los más altos
+              estándares de calidad, seguridad y responsabilidad social,
+              contribuyendo al desarrollo sostenible y al progreso de las
+              comunidades donde trabajamos.
+            </p>
+            <h3 className='mt-8 text-2xl/8 font-medium tracking-tight text-blue'>Vision</h3>
+            <p className="mt-4 text-sm/6 text-gray-600">
+              Ser una empresa familiar líder, competitiva y sostenible,
+              destacándonos en la industria minera y en la gestión de residuos
+              municipales. Aspiramos a consolidarnos como el socio estratégico
+              preferido por nuestros clientes, entregando confianza, eficiencia
+              y resultados de excelencia.
+            </p>
+            <div className="mt-8">
+              <Button className="w-full sm:w-auto" href="#">
+                Contactanos
+              </Button>
+            </div>
+          </>
+        }
+      />
       <Investors />
       <Careers />
       <Footer />

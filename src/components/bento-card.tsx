@@ -4,6 +4,16 @@ import { clsx } from 'clsx'
 import { motion } from 'framer-motion'
 import { Subheading } from './text'
 
+export type BentoCardProps = {
+  dark?: boolean
+  className?: string
+  eyebrow: React.ReactNode
+  title: React.ReactNode
+  description: React.ReactNode
+  graphic: React.ReactNode
+  fade?: ('top' | 'bottom')[]
+}
+
 export function BentoCard({
   dark = false,
   className = '',
@@ -31,7 +41,7 @@ export function BentoCard({
         className,
         'group relative flex flex-col overflow-hidden rounded-lg',
         'bg-white shadow-xs ring-1 ring-black/5',
-        'data-dark:bg-gray-800 data-dark:ring-white/15',
+        'data-dark:bg-blue data-dark:ring-white/15',
       )}
     >
       <div className="relative h-80 shrink-0">

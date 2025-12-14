@@ -1,3 +1,4 @@
+import { ContactForm } from '@/blocks/ContactForm'
 import { Header } from '@/blocks/Header'
 import { Container } from '@/components/container'
 import { Footer } from '@/components/footer'
@@ -6,8 +7,8 @@ import { Navbar } from '@/components/navbar'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Login',
-  description: 'Sign in to your account to continue.',
+  title: 'Contacto',
+  description: 'Contactanos para más información.',
 }
 
 export default function Login() {
@@ -21,6 +22,9 @@ export default function Login() {
         title="Contacto"
         description="Contactanos para más información."
       />
+      <Container className="my-24">
+        <ContactForm className="max-w-3xl" />
+      </Container>
       <Footer />
     </main>
   )

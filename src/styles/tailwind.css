@@ -6,6 +6,7 @@
   --radius-4xl: 2rem;
 
   --color-blue: #1C5499;
+  --color-dark-blue: #072E5B;
 }
 
 @keyframes move-x {
