@@ -15,9 +15,9 @@
     "clsx": "^2.1.1",
     "dayjs": "^1.11.13",
     "framer-motion": "^12.23.11",
-    "next": "15.4.4",
-    "react": "^19",
-    "react-dom": "^19",
+    "next": "^15.4.4",
+    "react": "^19.2.3",
+    "react-dom": "^19.2.3",
     "react-use-measure": "^2.1.7",
     "styled-components": "^6.1.19"
   },
