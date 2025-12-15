@@ -9,9 +9,8 @@ import { Navbar } from '@/components/navbar'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Pricing',
-  description:
-    'Companies all over the world have closed millions of deals with Radiant. Sign up today and start selling smarter.',
+  title: 'Servicios',
+  description: 'Expertos en servicios industriales mineros y municipales.',
 }
 
 const services = [
