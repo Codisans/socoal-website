@@ -18,7 +18,7 @@ export function Hero({
       <Container className="dark relative">
         <Navbar dark />
         <div className="pt-16 pb-24 sm:pt-24 sm:pb-32 md:pt-32 md:pb-48">
-          <h1 className="font-serif text-6xl/[0.9] font-medium tracking-tight text-balance text-dark-blue uppercase sm:text-8xl/[0.8] md:text-7xl dark:text-white">
+          <h1 className="font-serif text-4xl font-bold tracking-tight text-balance text-dark-blue uppercase sm:text-5xl lg:text-7xl dark:text-white">
             {title}
           </h1>
           <p className="mt-8 max-w-lg text-xl/7 font-medium text-gray-950/75 sm:text-2xl/8 dark:text-white">

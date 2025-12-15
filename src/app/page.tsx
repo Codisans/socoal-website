@@ -21,8 +21,7 @@ export default function Home() {
           <>
             Mas que un proveedor,
             <br />
-            un socio estratégico. <br />
-            <span className="block pt-8 font-bold">SOCOAL.</span>
+            un socio estratégico.
           </>
         }
         description="Transformamos desafíos operativos en resultados sostenibles."
