@@ -15,6 +15,19 @@ export default function LeafletMap() {
 
       console.log('leaflet map imported')
 
+      // Get the map container element
+      const mapContainer = document.getElementById('map')
+      if (!mapContainer) return
+
+      // Check if the container already has a Leaflet map instance
+      // @ts-ignore - Leaflet adds _leaflet_id to DOM elements it initializes
+      if (mapContainer._leaflet_id) {
+        console.log(
+          'Map container already has Leaflet instance, skipping initialization',
+        )
+        return
+      }
+
       const marker = new L.Icon({
         iconUrl: '/mining-1.png',
         iconSize: [32, 32],

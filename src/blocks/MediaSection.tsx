@@ -1,12 +1,14 @@
 import { Container } from '@/components/container'
 import { Screenshot } from '@/components/screenshot'
-import { Heading } from '@/components/text'
+import { Heading, Lead } from '@/components/text'
 
 export function MediaSection({
   title,
+  description,
   image,
 }: {
   title: string
+  description: string
   image: string
 }) {
   return (
@@ -15,6 +17,7 @@ export function MediaSection({
         <Heading as="h2" className="max-w-3xl">
           {title}
         </Heading>
+        {description && <Lead className="mt-6 max-w-3xl">{description}</Lead>}
         <Screenshot
           width={1216}
           height={768}

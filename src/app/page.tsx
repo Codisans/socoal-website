@@ -1,6 +1,7 @@
-import { BentoSection } from '@/blocks/BentoSection'
 import { CardCarousel } from '@/blocks/CardCarousel'
+import { DarkBentoSection } from '@/blocks/DarkBentoSection'
 import { Hero } from '@/blocks/Hero'
+import { MediaSection } from '@/blocks/MediaSection'
 import { BentoCard } from '@/components/bento-card'
 import { Button } from '@/components/button'
 import { Container } from '@/components/container'
@@ -39,7 +40,12 @@ export default function Home() {
           <LogoCloud />
         </Container>
         <div className="bg-linear-to-b from-white from-50% to-gray-100 py-32">
-          <BentoSection title="Socio Estratégico" subheading="Mineria" rows={1}>
+          <MediaSection
+            title="Socio Estratégico"
+            description="Transformamos desafíos operativos en resultados sostenibles."
+            image="/mining-1.jpg"
+          />
+          {/* <BentoSection title="Socio Estratégico" subheading="Mineria" rows={1}>
             <BentoCard
               eyebrow="Seguridad"
               title="Cultura de prevención"
@@ -70,8 +76,47 @@ export default function Home() {
               fade={['bottom']}
               className="max-lg:rounded-b-4xl lg:col-span-2 lg:rounded-br-4xl"
             />
-          </BentoSection>
+          </BentoSection> */}
         </div>
+        <DarkBentoSection
+          title="Socio Estratégico"
+          subheading="Mineria"
+          rows={1}
+        >
+          <BentoCard
+            dark
+            eyebrow="Seguridad"
+            title="Cultura de prevención"
+            description="Aplicamos estrictos protocolos de prevención y promovemos una cultura de seguridad en toda la organización."
+            graphic={
+              <div className="h-80 bg-[url(/mining-1.jpg)] bg-cover bg-center" />
+            }
+            fade={['bottom']}
+            className="lg:col-span-2 lg:rounded-bl-4xl"
+          />
+          <BentoCard
+            dark
+            eyebrow="Eficiencia"
+            title="Optimización continua"
+            description="Optimizamos permanentemente procesos y recursos para garantizar resultados oportunos y eficientes."
+            graphic={
+              <div className="absolute inset-0 bg-[url(/mining-1.jpg)] bg-cover bg-center" />
+            }
+            fade={['bottom']}
+            className="lg:col-span-2"
+          />
+          <BentoCard
+            dark
+            eyebrow="Eficacia"
+            title="Cumplimiento riguroso"
+            description="Cumplimos rigurosamente los requisitos solicitados por nuestros clientes."
+            graphic={
+              <div className="absolute inset-0 bg-[url(/mining-1.jpg)] bg-cover bg-center" />
+            }
+            fade={['bottom']}
+            className="max-lg:rounded-b-4xl lg:col-span-2 lg:rounded-br-4xl"
+          />
+        </DarkBentoSection>
 
         <CardCarousel
           heading="Conoce a nuesros servicios"
