@@ -16,9 +16,15 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link
+          rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossOrigin="anonymous"
+        />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Gidole&family=League+Spartan:wght@100..900&display=swap"
           rel="stylesheet"
-          href="https://api.fontshare.com/css?f%5B%5D=switzer@400,500,600,700&amp;display=swap"
         />
       </head>
       <body className="text-gray-950 antialiased">{children}</body>

@@ -7,33 +7,73 @@ export function LogoCloud({
     <div
       className={clsx(
         className,
-        'flex justify-between max-sm:mx-auto max-sm:max-w-md max-sm:flex-wrap max-sm:justify-evenly max-sm:gap-x-4 max-sm:gap-y-4',
+        'flex flex-wrap justify-between gap-x-4 gap-y-4 max-sm:mx-auto max-sm:max-w-md max-sm:justify-evenly',
       )}
     >
       <img
-        alt="SavvyCal"
-        src="/logo-cloud/savvycal.svg"
-        className="h-9 max-sm:mx-auto sm:h-8 lg:h-12"
+        alt="Codelco Chuquicamata"
+        src="/clientes/codelco-chuquicamata.png"
+        className="h-12 max-sm:mx-auto sm:h-16 lg:h-20"
       />
       <img
-        alt="Laravel"
-        src="/logo-cloud/laravel.svg"
-        className="h-9 max-sm:mx-auto sm:h-8 lg:h-12"
+        alt="Codelco Radomiro Tomic"
+        src="/clientes/codelco-radomiro-tomic.png"
+        className="h-12 max-sm:mx-auto sm:h-16 lg:h-20"
       />
       <img
-        alt="Tuple"
-        src="/logo-cloud/tuple.svg"
-        className="h-9 max-sm:mx-auto sm:h-8 lg:h-12"
+        alt="Codelco Ministro Hales"
+        src="/clientes/codelco-ministro-hales.png"
+        className="h-12 max-sm:mx-auto sm:h-16 lg:h-20"
       />
       <img
-        alt="Transistor"
-        src="/logo-cloud/transistor.svg"
-        className="h-9 max-sm:mx-auto sm:h-8 lg:h-12"
+        alt="Codelco Gabriela Mistral"
+        src="/clientes/codelco-gabriela-mistral.png"
+        className="h-12 max-sm:mx-auto sm:h-16 lg:h-20"
       />
       <img
-        alt="Statamic"
-        src="/logo-cloud/statamic.svg"
-        className="h-9 max-sm:mx-auto sm:h-8 lg:h-12"
+        alt="Codelco Salvador"
+        src="/clientes/codelco-salvador.png"
+        className="h-12 max-sm:mx-auto sm:h-16 lg:h-20"
+      />
+      <img
+        alt="Lundin Mining"
+        src="/clientes/lundin-mining.png"
+        className="h-12 max-sm:mx-auto sm:h-16 lg:h-20"
+      />
+      <img
+        alt="El Abra"
+        src="/clientes/el-abra.png"
+        className="h-12 max-sm:mx-auto sm:h-16 lg:h-20"
+      />
+      <img
+        alt="Antofagasta Minerals"
+        src="/clientes/antofagasta-minerals.png"
+        className="h-12 max-sm:mx-auto sm:h-16 lg:h-20"
+      />
+      <img
+        alt="Eco Metales"
+        src="/clientes/eco-metales.jpeg"
+        className="h-12 max-sm:mx-auto sm:h-16 lg:h-20"
+      />
+      <img
+        alt="Municipalidad de Antofagasta"
+        src="/clientes/municipalidad-antofagasta.png"
+        className="h-12 max-sm:mx-auto sm:h-16 lg:h-20"
+      />
+      <img
+        alt="Municipalidad de Calama"
+        src="/clientes/municipalidad-calama.png"
+        className="h-12 max-sm:mx-auto sm:h-16 lg:h-20"
+      />
+      <img
+        alt="Municipalidad de Iquique"
+        src="/clientes/municipalidad-iquique.png"
+        className="h-12 max-sm:mx-auto sm:h-16 lg:h-20"
+      />
+      <img
+        alt="Municipalidad de San Pedro de Atacama"
+        src="/clientes/municipalidad-san-pedro.png"
+        className="h-12 max-sm:mx-auto sm:h-16 lg:h-20"
       />
     </div>
   )

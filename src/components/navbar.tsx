@@ -6,6 +6,7 @@ import {
   DisclosurePanel,
 } from '@headlessui/react'
 import { Bars2Icon } from '@heroicons/react/24/solid'
+import clsx from 'clsx'
 import { motion } from 'framer-motion'
 import { Link } from './link'
 import { Logo } from './logo'
@@ -25,7 +26,7 @@ function DesktopNav() {
         <PlusGridItem key={href} className="relative flex">
           <Link
             href={href}
-            className="flex items-center px-4 py-3 text-base font-medium text-gray-950 bg-blend-multiply data-hover:bg-black/2.5"
+            className="flex items-center px-4 py-3 text-base font-medium text-gray-950 bg-blend-multiply data-hover:bg-black/2.5 dark:text-white"
           >
             {label}
           </Link>
@@ -75,14 +76,27 @@ function MobileNav() {
   )
 }
 
-export function Navbar({ banner }: { banner?: React.ReactNode }) {
+export function Navbar({
+  banner,
+  dark,
+}: {
+  banner?: React.ReactNode
+  dark?: boolean
+}) {
   return (
-    <Disclosure as="header" className="pt-12 sm:pt-16">
+    <Disclosure
+      as="header"
+      className={clsx('pt-12 text-white sm:pt-16', dark ? 'dark' : '')}
+    >
       <PlusGrid>
         <PlusGridRow className="relative flex justify-between">
           <div className="relative flex gap-6">
             <PlusGridItem className="">
-              <Link href="/" title="Home">
+              <Link
+                className="dark:brightness-0 dark:invert"
+                href="/"
+                title="Home"
+              >
                 <Logo />
               </Link>
             </PlusGridItem>
