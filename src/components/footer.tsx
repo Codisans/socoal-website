@@ -27,9 +27,9 @@ function CallToAction() {
   )
 }
 
-function SitemapHeading({ children }: { children: React.ReactNode }) {
-  return <h3 className="text-sm/6 font-medium text-gray-950/50">{children}</h3>
-}
+// function SitemapHeading({ children }: { children: React.ReactNode }) {
+//   return <h3 className="text-sm/6 font-medium text-gray-950/50">{children}</h3>
+// }
 
 function SitemapLinks({ children }: { children: React.ReactNode }) {
   return <ul className="mt-6 space-y-4 text-sm/6">{children}</ul>
@@ -40,7 +40,7 @@ function SitemapLink(props: React.ComponentPropsWithoutRef<typeof Link>) {
     <li>
       <Link
         {...props}
-        className="font-medium text-gray-950 data-hover:text-gray-950/75"
+        className="font-medium text-gray-950 data-hover:text-gray-950/75 dark:text-white dark:data-hover:text-white/75"
       />
     </li>
   )
@@ -108,7 +108,7 @@ function SocialLinks() {
         href="https://facebook.com"
         target="_blank"
         aria-label="Visit us on Facebook"
-        className="text-gray-950 data-hover:text-gray-950/75"
+        className="text-gray-950 data-hover:text-gray-950/75 dark:text-white dark:data-hover:text-white/75"
       >
         <SocialIconFacebook className="size-4" />
       </Link>
@@ -116,7 +116,7 @@ function SocialLinks() {
         href="https://x.com"
         target="_blank"
         aria-label="Visit us on X"
-        className="text-gray-950 data-hover:text-gray-950/75"
+        className="text-gray-950 data-hover:text-gray-950/75 dark:text-white dark:data-hover:text-white/75"
       >
         <SocialIconX className="size-4" />
       </Link>
@@ -124,7 +124,7 @@ function SocialLinks() {
         href="https://linkedin.com"
         target="_blank"
         aria-label="Visit us on LinkedIn"
-        className="text-gray-950 data-hover:text-gray-950/75"
+        className="text-gray-950 data-hover:text-gray-950/75 dark:text-white dark:data-hover:text-white/75"
       >
         <SocialIconLinkedIn className="size-4" />
       </Link>
@@ -134,7 +134,7 @@ function SocialLinks() {
 
 function Copyright() {
   return (
-    <div className="text-sm/6 text-gray-950">
+    <div className="text-sm/6 text-gray-950 dark:text-white">
       &copy; {new Date().getFullYear()} SOCOAL SpA.
     </div>
   )
@@ -144,15 +144,15 @@ export function Footer() {
   return (
     <footer>
       <CallToAction />
-      <Gradient className="relative bg-none! pt-16">
-        <div className="absolute inset-2 rounded-4xl bg-white/80" />
-        <Container>
+      <Gradient className="dark relative bg-none! pt-16">
+        <div className="absolute inset-2 rounded-4xl bg-white/80 dark:bg-blue dark:text-white" />
+        <Container className="dark">
           <PlusGrid className="pb-16">
             <PlusGridRow>
               <div className="grid grid-cols-2 gap-y-10 pb-6 lg:grid-cols-6 lg:gap-8">
                 <div className="col-span-2 flex">
                   <PlusGridItem className="pt-6 lg:pb-6">
-                    <Logo className="h-9" />
+                    <Logo className="h-9 dark:brightness-0 dark:invert" />
                   </PlusGridItem>
                 </div>
                 <div className="col-span-2 grid grid-cols-2 gap-x-8 gap-y-12 lg:col-span-4 lg:grid-cols-subgrid lg:pt-6">

@@ -2,7 +2,7 @@
 import { useEffect, useRef } from 'react'
 
 export default function LeafletMap() {
-  const mapRef = useRef<any>(null)
+  const mapRef = useRef<unknown>(null)
 
   useEffect(() => {
     // Dynamically import Leaflet only on the client side
@@ -10,7 +10,7 @@ export default function LeafletMap() {
       if (mapRef.current) return // Map already initialized
 
       const L = await import('leaflet')
-      // @ts-ignore - CSS import
+      // @ts-expect-error - CSS import
       await import('leaflet/dist/leaflet.css')
 
       console.log('leaflet map imported')
@@ -20,7 +20,7 @@ export default function LeafletMap() {
       if (!mapContainer) return
 
       // Check if the container already has a Leaflet map instance
-      // @ts-ignore - Leaflet adds _leaflet_id to DOM elements it initializes
+      // @ts-expect-error - Leaflet adds _leaflet_id to DOM elements it initializes
       if (mapContainer._leaflet_id) {
         console.log(
           'Map container already has Leaflet instance, skipping initialization',
@@ -28,11 +28,11 @@ export default function LeafletMap() {
         return
       }
 
-      const marker = new L.Icon({
-        iconUrl: '/mining-1.png',
-        iconSize: [32, 32],
-        iconAnchor: [16, 16],
-      })
+      // const marker = new L.Icon({
+      //   iconUrl: '/mining-1.png',
+      //   iconSize: [32, 32],
+      //   iconAnchor: [16, 16],
+      // })
 
       mapRef.current = L.map('map', {
         center: [-33.4489, -70.6693],
@@ -51,6 +51,7 @@ export default function LeafletMap() {
     // Cleanup function
     return () => {
       if (mapRef.current) {
+        // @ts-expect-error - mapRef.current is of type unknown
         mapRef.current.remove()
         mapRef.current = null
       }
