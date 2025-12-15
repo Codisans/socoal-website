@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   description: 'Conoce a nuestra comunidad de clientes y colaboradores.',
 }
 
-export default function Login() {
+export default function Comunidad() {
   return (
     <main className="overflow-hidden">
       <GradientBackground />
@@ -21,7 +21,9 @@ export default function Login() {
       </Container>
       <Header
         title="Comunidad"
-        // description="Para la familia Socoal, es un orgullo mantener un vínculo sólido con la ciudad que nos vio nacer y en la que continuamos desarrollando nuestras actividades."
+        description="Para la familia Socoal, es un orgullo mantener un vínculo sólido
+              con la ciudad que nos vio nacer y en la que continuamos
+              desarrollando nuestras actividades."
       />
       <Careers />
       <Footer />
@@ -35,24 +37,9 @@ function Careers() {
       <div className="grid grid-cols-1 gap-16 lg:grid-cols-[1fr_24rem]">
         <div className="lg:max-w-2xl">
           <div>
-            <Lead>
-            Para la familia Socoal, es un orgullo mantener un vínculo sólido
-              con la ciudad que nos vio nacer y en la que continuamos
-              desarrollando nuestras actividades.
-            </Lead>
-            <Lead className='mt-8'>
-            Creemos firmemente en la
-              responsabilidad social empresarial y en el impacto positivo que
-              una compañía puede generar en su entorno.
-            </Lead>
-            {/* <p>
-              Para la familia Socoal, es un orgullo mantener un vínculo sólido
-              con la ciudad que nos vio nacer y en la que continuamos
-              desarrollando nuestras actividades. Creemos firmemente en la
-              responsabilidad social empresarial y en el impacto positivo que
-              una compañía puede generar en su entorno.
-            </p> */}
-            <p className="mt-8">
+            <p>
+              Creemos firmemente en la responsabilidad social empresarial y en
+              el impacto positivo que una compañía puede generar en su entorno.
               Participamos activamente en iniciativas de apoyo comunitario,
               colaborando con organizaciones sin fines de lucro, instituciones
               educativas y actores locales para identificar necesidades y
@@ -67,7 +54,7 @@ function Careers() {
               se construye en conjunto, y trabajamos día a día para ser un
               agente positivo dentro de nuestra región.
             </p>
-            <Lead className="mt-8">Nosotros somos norte.</Lead>
+            <Lead className="mt-8">Socoal, forjados en sol y cobre.</Lead>
           </div>
         </div>
         <TestimonialCard
