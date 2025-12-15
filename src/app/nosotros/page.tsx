@@ -17,29 +17,38 @@ function Header() {
     <Container className="mt-16">
       <Heading as="h1">Quienes somos?</Heading>
       <Lead className="mt-6 max-w-3xl">
-        Socoal SpA. es una empresa familiar fundada por Héctor German Álvarez,
-        inicia actividades en el año 1954 como persona natural en el rubro
-        transporte y construcción para la mina Chuquicamata administrada por la
-        empresa norteamericana ChilexExploration Company.
+        Socoal Spa es una empresa familiar calameña fundada en 1954 por don
+        Héctor “Tito” Álvarez, con el objetivo principal de satisfacer las
+        necesidades de sus clientes, apoyando los procesos de la gran minería
+        chilena y las municipalidades del país.
       </Lead>
 
       <section className="mt-16 grid grid-cols-1 lg:grid-cols-2 lg:gap-12">
         <div className="max-w-lg">
-          <p className="mt-6 text-sm/6 text-gray-600">
-            Socoal Ltda. es una empresa familiar con más de seis décadas de
-            trayectoria, dedicada a apoyar los procesos de la gran minería
-            chilena y diversas municipalidades del país. Nuestros orígenes se
-            remontan a 1954, cuando Héctor Germán Álvarez inició actividades en
-            transporte y construcción para la mina Chuquicamata.
+          {/* <p className="mt-6 text-sm/6 text-gray-600">
+            Socoal Spa es una empresa familiar calameña fundada en 1954 por don
+            Héctor “Tito” Álvarez, con el objetivo principal de satisfacer las
+            necesidades de sus clientes, apoyando los procesos de la gran
+            minería chilena y las municipalidades del país.
+          </p> */}
+          <p className="mt-8 text-lg text-gray-600">
+            Actualmente, Socoal es liderada por la segunda y tercera generación
+            de la familia, comprometidas con un futuro más limpio y sostenible
+            para nuestra ciudad y trabajando activamente en la preservación del
+            bienestar de las futuras generaciones.
           </p>
-          <p className="mt-8 text-sm/6 text-gray-600">
-            En 1975, junto a sus hijos, funda Socoal Ltda., dando inicio a un
-            legado basado en el trabajo responsable, la excelencia operativa y
-            la mejora continua. Hoy, nuestra empresa se distingue por su
-            compromiso con la calidad, la seguridad y el medio ambiente,
-            respaldado por certificaciones internacionales ISO 9001, 14001 y
-            45001.
-          </p>
+          {/* <Lead className="mt-6 max-w-3xl">
+            Socoal Spa es una empresa familiar calameña fundada en 1954 por don
+            Héctor “Tito” Álvarez, con el objetivo principal de satisfacer las
+            necesidades de sus clientes, apoyando los procesos de la gran
+            minería chilena y las municipalidades del país.
+          </Lead>
+          <Lead className="mt-6 max-w-3xl">
+            Actualmente, Socoal es liderada por la segunda y tercera generación
+            de la familia, comprometidas con un futuro más limpio y sostenible
+            para nuestra ciudad y trabajando activamente en la preservación del
+            bienestar de las futuras generaciones.
+          </Lead> */}
         </div>
         <div className="pt-20 lg:row-span-2 lg:-mr-16 xl:mr-auto">
           <div className="-mx-8 grid grid-cols-2 gap-4 sm:-mx-16 sm:grid-cols-4 lg:mx-0 lg:grid-cols-2 lg:gap-4 xl:gap-8">
