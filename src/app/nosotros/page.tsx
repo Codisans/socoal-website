@@ -1,7 +1,5 @@
-import { ProfileList } from '@/blocks/ProfileList'
-import { TextAndImage } from '@/blocks/TextAndImage'
+import { TwoColumn } from '@/blocks/TwoColumn'
 import { AnimatedNumber } from '@/components/animated-number'
-import { Button } from '@/components/button'
 import { Container } from '@/components/container'
 import { Footer } from '@/components/footer'
 import { GradientBackground } from '@/components/gradient'
@@ -118,63 +116,21 @@ export default function Nosotros() {
         <Navbar />
       </Container>
       <Header />
-      <TextAndImage
-        heading="Para donde vamos?"
-        subheading="Propósito"
-        description=""
-        image="/company/5.png"
-        body={
-          <>
-            <h3 className="text-2xl/8 font-medium tracking-tight text-blue">
-              Misión
-            </h3>
-            <p className="mt-4 text-sm/6 text-gray-600">
-              Mantener y fortalecer nuestros valores familiares a través del
-              profesionalismo de nuestro equipo, entregando servicios de
-              excelencia y soluciones integrales que respondan a las necesidades
-              específicas de cada cliente. Operamos cumpliendo los más altos
-              estándares de calidad, seguridad y responsabilidad social,
-              contribuyendo al desarrollo sostenible y al progreso de las
-              comunidades donde trabajamos.
-            </p>
-            <h3 className="mt-8 text-2xl/8 font-medium tracking-tight text-blue">
-              Vision
-            </h3>
-            <p className="mt-4 text-sm/6 text-gray-600">
-              Ser una empresa familiar líder, competitiva y sostenible,
-              destacándonos en la industria minera y en la gestión de residuos
-              municipales. Aspiramos a consolidarnos como el socio estratégico
-              preferido por nuestros clientes, entregando confianza, eficiencia
-              y resultados de excelencia.
-            </p>
-            <div className="mt-8">
-              <Button className="w-full sm:w-auto" href="#">
-                Contactanos
-              </Button>
-            </div>
-          </>
-        }
-      />
-      <ProfileList
-        className="mb-28"
-        title="Certificaciones"
-        subheading="Certificaciones"
-        description="Certificaciones de calidad, seguridad y medio ambiente"
+      <TwoColumn
+        className="mb-32"
+        title="Cultura y valores"
         items={[
           {
-            name: 'ISO 9001',
-            description: 'Certificación de calidad',
-            img: '/company/iso-9001.png',
+            title: 'Misión',
+            description:
+              'Mantener y fortalecer nuestros valores familiares a través del profesionalismo de nuestro equipo, entregando servicios de excelencia y soluciones integrales que respondan a las necesidades específicas de cada cliente. Operamos cumpliendo los más altos estándares de calidad, seguridad y responsabilidad social, contribuyendo al desarrollo sostenible y al progreso de las comunidades donde trabajamos.',
+            // image: '/company/5.png',
           },
           {
-            name: 'ISO 14001',
-            description: 'Certificación de medio ambiente',
-            img: '/company/iso-14001.png',
-          },
-          {
-            name: 'ISO 45001',
-            description: 'Certificación de seguridad',
-            img: '/company/iso-45001.png',
+            title: 'Visión',
+            description:
+              'Ser una empresa familiar líder, competitiva y sostenible, destacándonos en la industria minera y en la gestión de residuos municipales. Aspiramos a consolidarnos como el socio estratégico preferido por nuestros clientes, entregando confianza, eficiencia y resultados de excelencia.',
+            // image: '/company/1.png',
           },
         ]}
       />

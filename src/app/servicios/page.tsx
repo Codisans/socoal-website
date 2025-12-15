@@ -63,9 +63,9 @@ export default async function Servicios() {
       <Header title="Servicios" description="Servicios para tu negocio." />
       <ServiceCards services={services} />
       <ProfileList
-        title="Certificaciones"
+        title="Compromiso profesional"
         subheading="Certificaciones"
-        description="Certificaciones de calidad, seguridad y medio ambiente"
+        description="Contamos con certificaciones internacionales ISO 9001, ISO 14001 e ISO 45001, que respaldan nuestro Sistema de Gestión Integrado en calidad, seguridad y medio ambiente"
         items={[
           {
             name: 'ISO 9001',
@@ -85,7 +85,7 @@ export default async function Servicios() {
         ]}
       />
       <Testimonial
-        className="mt-36 lg:mt-48"
+        className="mt-36 lg:mt-52"
         image="/company/1.png"
         quote="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos."
         name="Tito Alvarez"
