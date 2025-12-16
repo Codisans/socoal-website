@@ -26,6 +26,7 @@ export default function Home() {
           </>
         }
         description="Transformamos desafíos operativos en resultados sostenibles."
+        image="/oficina.webp"
         buttons={
           <>
             <Button href="/contacto">Contactanos</Button>
