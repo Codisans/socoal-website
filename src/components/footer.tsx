@@ -143,7 +143,7 @@ function Copyright() {
 export function Footer() {
   return (
     <footer>
-      <CallToAction />
+      {/* <CallToAction /> */}
       <Gradient className="dark relative bg-none! pt-16">
         <div className="absolute inset-2 rounded-4xl bg-white/80 dark:bg-blue dark:text-white" />
         <Container className="dark">
@@ -155,9 +155,9 @@ export function Footer() {
                     <Logo className="h-9 dark:brightness-0 dark:invert" />
                   </PlusGridItem>
                 </div>
-                <div className="col-span-2 grid grid-cols-2 gap-x-8 gap-y-12 lg:col-span-4 lg:grid-cols-subgrid lg:pt-6">
+                {/* <div className="col-span-2 grid grid-cols-2 gap-x-8 gap-y-12 lg:col-span-4 lg:grid-cols-subgrid lg:pt-6">
                   <Sitemap />
-                </div>
+                </div> */}
               </div>
             </PlusGridRow>
             <PlusGridRow className="flex justify-between">
