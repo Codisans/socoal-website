@@ -8,22 +8,24 @@ import { Subheading } from './text'
 
 function CallToAction() {
   return (
-    <div className="relative pt-20 pb-16 text-center sm:py-24">
-      <hgroup>
-        <Subheading>Trabajemos juntos</Subheading>
-        <p className="mt-6 text-3xl font-medium tracking-tight text-dark-blue sm:text-5xl">
-          Socoal, forjados en sol y cobre.
+    <Container>
+      <div className="relative pt-20 pb-16 text-center sm:py-24">
+        <hgroup>
+          <Subheading>Trabajemos juntos</Subheading>
+          <p className="mt-6 text-3xl font-medium tracking-tight text-dark-blue sm:text-5xl">
+            Socoal, forjados en sol y cobre.
+          </p>
+        </hgroup>
+        <p className="mx-auto mt-6 max-w-xs text-sm/6 text-gray-500">
+          Expertos en servicios industriales y municipales.
         </p>
-      </hgroup>
-      <p className="mx-auto mt-6 max-w-xs text-sm/6 text-gray-500">
-        Expertos en servicios industriales y municipales.
-      </p>
-      <div className="mt-6">
-        <Button className="w-full sm:w-auto" href="/contacto">
-          Contacto
-        </Button>
+        <div className="mt-6">
+          <Button className="w-auto" href="/contacto">
+            Contacto
+          </Button>
+        </div>
       </div>
-    </div>
+    </Container>
   )
 }
 
