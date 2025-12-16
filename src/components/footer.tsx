@@ -73,21 +73,14 @@ function Sitemap() {
   )
 }
 
-function SocialIconX(props: React.ComponentPropsWithoutRef<'svg'>) {
+function SocialIconInstagram(props: React.ComponentPropsWithoutRef<'svg'>) {
   return (
-    <svg viewBox="0 0 16 16" fill="currentColor" {...props}>
-      <path d="M12.6 0h2.454l-5.36 6.778L16 16h-4.937l-3.867-5.594L2.771 16H.316l5.733-7.25L0 0h5.063l3.495 5.114L12.6 0zm-.86 14.376h1.36L4.323 1.539H2.865l8.875 12.837z" />
-    </svg>
-  )
-}
-
-function SocialIconFacebook(props: React.ComponentPropsWithoutRef<'svg'>) {
-  return (
-    <svg viewBox="0 0 16 16" fill="currentColor" {...props}>
+    <svg fill="none" viewBox="0 0 24 24" {...props}>
       <path
-        fillRule="evenodd"
-        clipRule="evenodd"
-        d="M16 8.05C16 3.603 12.418 0 8 0S0 3.604 0 8.05c0 4.016 2.926 7.346 6.75 7.95v-5.624H4.718V8.05H6.75V6.276c0-2.017 1.194-3.131 3.022-3.131.875 0 1.79.157 1.79.157v1.98h-1.008c-.994 0-1.304.62-1.304 1.257v1.51h2.219l-.355 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.95z"
+        fill="currentColor"
+        fill-rule="evenodd"
+        d="M3 8a5 5 0 0 1 5-5h8a5 5 0 0 1 5 5v8a5 5 0 0 1-5 5H8a5 5 0 0 1-5-5V8Zm5-3a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h8a3 3 0 0 0 3-3V8a3 3 0 0 0-3-3H8Zm7.597 2.214a1 1 0 0 1 1-1h.01a1 1 0 1 1 0 2h-.01a1 1 0 0 1-1-1ZM12 9a3 3 0 1 0 0 6 3 3 0 0 0 0-6Zm-5 3a5 5 0 1 1 10 0 5 5 0 0 1-10 0Z"
+        clip-rule="evenodd"
       />
     </svg>
   )
@@ -105,28 +98,22 @@ function SocialLinks() {
   return (
     <>
       <Link
-        href="https://facebook.com"
-        target="_blank"
-        aria-label="Visit us on Facebook"
-        className="text-gray-950 data-hover:text-gray-950/75 dark:text-white dark:data-hover:text-white/75"
-      >
-        <SocialIconFacebook className="size-4" />
-      </Link>
-      <Link
-        href="https://x.com"
+        href="https://www.instagram.com/socoal.spa"
         target="_blank"
         aria-label="Visit us on X"
-        className="text-gray-950 data-hover:text-gray-950/75 dark:text-white dark:data-hover:text-white/75"
+        className="text-gray-950 data-hover:opacity-75 dark:text-white"
       >
-        <SocialIconX className="size-4" />
+        <span className="flex size-5 items-center justify-center rounded-xs bg-white text-blue">
+          <SocialIconInstagram className="size-5" />
+        </span>
       </Link>
       <Link
-        href="https://linkedin.com"
+        href="https://www.linkedin.com/company/80778540"
         target="_blank"
         aria-label="Visit us on LinkedIn"
         className="text-gray-950 data-hover:text-gray-950/75 dark:text-white dark:data-hover:text-white/75"
       >
-        <SocialIconLinkedIn className="size-4" />
+        <SocialIconLinkedIn className="size-5" />
       </Link>
     </>
   )
