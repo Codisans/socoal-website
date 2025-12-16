@@ -4,7 +4,6 @@ import { Container } from '@/components/container'
 import { Footer } from '@/components/footer'
 import { GradientBackground } from '@/components/gradient'
 import { Navbar } from '@/components/navbar'
-import { Lead } from '@/components/text'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
@@ -54,7 +53,7 @@ function Careers() {
               se construye en conjunto, y trabajamos día a día para ser un
               agente positivo dentro de nuestra región.
             </p>
-            <Lead className="mt-8">Socoal, forjados en sol y cobre.</Lead>
+            {/* <Lead className="mt-8">Socoal, forjados en sol y cobre.</Lead> */}
           </div>
         </div>
         <TestimonialCard

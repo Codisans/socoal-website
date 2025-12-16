@@ -16,19 +16,15 @@ export function TestimonialCard({
         aria-hidden="true"
         className="absolute inset-0 rounded-3xl bg-linear-to-t from-black from-10% to-75% ring-1 ring-gray-950/10 ring-inset lg:from-25%"
       />
-      <figure className="relative p-10">
+      <figure className="relative p-10 text-white">
         <blockquote>
           <p className="relative text-xl/7 text-white before:absolute before:-translate-x-full before:content-['“'] after:absolute after:content-['”']">
             {quote}
           </p>
         </blockquote>
         <figcaption className="mt-6 border-t border-white/20 pt-6">
-          <p className="text-sm/6 font-medium text-white">{name}</p>
-          <p className="text-sm/6 font-medium">
-            <span className="bg-linear-to-r from-[#fff1be] from-28% via-[#ee87cb] via-70% to-[#b060ff] bg-clip-text text-transparent">
-              {title}
-            </span>
-          </p>
+          <p className="font-serif text-xl font-semibold">{name}</p>
+          <p className="text-sm/6 font-medium">{title}</p>
         </figcaption>
       </figure>
     </div>
