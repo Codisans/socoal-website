@@ -42,8 +42,8 @@ export default function Home() {
         </Container>
         <div className="bg-linear-to-b from-white from-50% to-gray-100 py-32">
           <TextAndVideo
-            heading="Presentación Corporativa"
-            subheading="Mineria"
+            heading="Más de 70 Años Brindando Soluciones"
+            subheading="Presentación Corporativa"
             description="Conoce a Socoal, una empresa que se dedica a la prestación de servicios industriales y municipales."
             body={
               <p className="mt-8 flex gap-4">
@@ -58,38 +58,6 @@ export default function Home() {
             posterImage="/mining-1.jpg"
             videoId="-9QKCC8pFyU"
           />
-          {/* <BentoSection title="Socio Estratégico" subheading="Mineria" rows={1}>
-            <BentoCard
-              eyebrow="Seguridad"
-              title="Cultura de prevención"
-              description="Aplicamos estrictos protocolos de prevención y promovemos una cultura de seguridad en toda la organización."
-              graphic={
-                <div className="h-80 bg-[url(/mining-1.jpg)] bg-cover bg-center" />
-              }
-              fade={['bottom']}
-              className="lg:col-span-2 lg:rounded-bl-4xl"
-            />
-            <BentoCard
-              eyebrow="Eficiencia"
-              title="Optimización continua"
-              description="Optimizamos permanentemente procesos y recursos para garantizar resultados oportunos y eficientes."
-              graphic={
-                <div className="absolute inset-0 bg-[url(/mining-1.jpg)] bg-cover bg-center" />
-              }
-              fade={['bottom']}
-              className="lg:col-span-2"
-            />
-            <BentoCard
-              eyebrow="Eficacia"
-              title="Cumplimiento riguroso"
-              description="Cumplimos rigurosamente los requisitos solicitados por nuestros clientes."
-              graphic={
-                <div className="absolute inset-0 bg-[url(/mining-1.jpg)] bg-cover bg-center" />
-              }
-              fade={['bottom']}
-              className="max-lg:rounded-b-4xl lg:col-span-2 lg:rounded-br-4xl"
-            />
-          </BentoSection> */}
         </div>
         <DarkBentoSection
           title="Socio Estratégico"
@@ -132,7 +100,7 @@ export default function Home() {
         </DarkBentoSection>
 
         <CardCarousel
-          heading="Conoce a nuestros servicios"
+          heading="Conoce nuestros servicios"
           subheading="Servicios"
           callToAction={{
             description: 'Descubre más sobre nuestros servicios',

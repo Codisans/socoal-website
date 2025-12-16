@@ -64,7 +64,7 @@ export default async function Servicios() {
       <ProfileList
         title="Compromiso profesional"
         subheading="Certificaciones"
-        description="La seguridad de las personas es una prioridad fundamental para la empresa, que implementa estrictos protocolos y estándares de seguridad en todas sus operaciones, garantizando un ambiente de trabajo seguro para todos. Se encuentran certificados con ISO: 45001 Salud y seguridad en el trabajo, 14001 medio ambiente y 16001 calidad."
+        description="La seguridad es una prioridad fundamental para nosotros, implementamos estrictos protocolos y estándares de seguridad en todas nuestras operaciones, garantizando un ambiente de trabajo seguro para todos."
         items={[
           {
             name: 'ISO 9001',
