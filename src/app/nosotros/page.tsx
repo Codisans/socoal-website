@@ -25,30 +25,12 @@ function Header() {
 
       <section className="mt-16 grid grid-cols-1 lg:grid-cols-2 lg:gap-12">
         <div className="max-w-lg">
-          {/* <p className="mt-6 text-sm/6 text-gray-600">
-            Socoal Spa es una empresa familiar calameña fundada en 1954 por don
-            Héctor “Tito” Álvarez, con el objetivo principal de satisfacer las
-            necesidades de sus clientes, apoyando los procesos de la gran
-            minería chilena y las municipalidades del país.
-          </p> */}
           <p className="mt-8 text-lg text-gray-600">
             Actualmente, Socoal es liderada por la segunda y tercera generación
             de la familia, comprometidas con un futuro más limpio y sostenible
             para nuestra ciudad y trabajando activamente en la preservación del
             bienestar de las futuras generaciones.
           </p>
-          {/* <Lead className="mt-6 max-w-3xl">
-            Socoal Spa es una empresa familiar calameña fundada en 1954 por don
-            Héctor “Tito” Álvarez, con el objetivo principal de satisfacer las
-            necesidades de sus clientes, apoyando los procesos de la gran
-            minería chilena y las municipalidades del país.
-          </Lead>
-          <Lead className="mt-6 max-w-3xl">
-            Actualmente, Socoal es liderada por la segunda y tercera generación
-            de la familia, comprometidas con un futuro más limpio y sostenible
-            para nuestra ciudad y trabajando activamente en la preservación del
-            bienestar de las futuras generaciones.
-          </Lead> */}
         </div>
         <div className="pt-20 lg:row-span-2 lg:-mr-16 xl:mr-auto">
           <div className="-mx-8 grid grid-cols-2 gap-4 sm:-mx-16 sm:grid-cols-4 lg:mx-0 lg:grid-cols-2 lg:gap-4 xl:gap-8">
@@ -143,6 +125,13 @@ export default function Nosotros() {
           },
         ]}
       />
+      <Container>
+        <img
+          src="/panoramic.webp"
+          alt="Socoal"
+          className="aspect-32/9 w-full rounded-xl object-cover shadow-xl outline-1 -outline-offset-1 outline-black/10"
+        />
+      </Container>
       <Footer />
     </main>
   )
