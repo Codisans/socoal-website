@@ -30,7 +30,7 @@ export default function Scratch() {
         <ContactForm className="max-w-3xl" />
       </Container>
       <Careers />
-      <DarkBentoSection title="60 años de trayectoria" subheading="Mineria">
+      <DarkBentoSection title="70 años de trayectoria" subheading="Minería">
         <BentoCard
           dark
           eyebrow="Networking"

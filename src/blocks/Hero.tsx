@@ -57,11 +57,11 @@ export function Hero({
       )}
       <Container className="dark relative z-50">
         <Navbar dark />
-        <div className="pt-16 pb-48 sm:pt-24 sm:pb-40 md:pt-32 md:pb-52 lg:pb-40">
+        <div className="pt-16 pb-48 sm:pt-24 sm:pb-48 md:pt-32 md:pb-52 lg:pb-40">
           <h1 className="font-serif text-4xl font-bold tracking-tight text-balance text-dark-blue uppercase sm:text-5xl lg:text-7xl dark:text-white">
             {title}
           </h1>
-          <p className="mt-8 max-w-lg text-xl/7 font-medium text-gray-950/75 max-sm:pr-8 sm:text-2xl/8 dark:text-white">
+          <p className="mt-8 max-w-lg text-xl/7 font-medium text-gray-950/75 max-md:pr-16 max-sm:pr-14 sm:text-2xl/8 dark:text-white">
             {description}
           </p>
           <div className="mt-12 flex flex-col items-start gap-x-6 gap-y-4 sm:flex-row">

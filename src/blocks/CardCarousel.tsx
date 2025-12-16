@@ -22,6 +22,7 @@ export interface CardCarouselProps {
   subheading: string
   heading: string
   callToAction?: CallToActionProps
+  className?: string
   showDots?: boolean
 }
 
@@ -30,6 +31,7 @@ export function CardCarousel({
   subheading,
   heading,
   callToAction,
+  className,
   showDots = true,
 }: CardCarouselProps) {
   let scrollRef = useRef<HTMLDivElement | null>(null)
@@ -48,7 +50,7 @@ export function CardCarousel({
   }
 
   return (
-    <div className="overflow-hidden py-32">
+    <div className={clsx('overflow-hidden pt-32', className)}>
       <Container>
         <div ref={setReferenceWindowRef}>
           <Subheading>{subheading}</Subheading>

@@ -29,7 +29,7 @@ export default function Home() {
         image="/office.webp"
         buttons={
           <>
-            <Button href="/contacto">Contactanos</Button>
+            <Button href="/contacto">Contáctanos</Button>
             <Button variant="secondary" href="/servicios">
               Nuestros servicios
             </Button>
@@ -44,7 +44,7 @@ export default function Home() {
           <TextAndVideo
             heading="Más de 70 Años Brindando Soluciones"
             subheading="Presentación Corporativa"
-            description="Conoce a Socoal, expertos en prestaciones de servicios en la Industria Minera y Municipal."
+            description="Conoce Socoal, expertos en prestaciones de servicios en la Industria Minera y Municipal."
             body={
               <p className="mt-8 flex gap-4">
                 <Button variant="primary" href="/nosotros">
@@ -61,7 +61,7 @@ export default function Home() {
         </div>
         <DarkBentoSection
           title="Socio Estratégico"
-          subheading="Mineria"
+          subheading="Minería"
           rows={1}
         >
           <BentoCard

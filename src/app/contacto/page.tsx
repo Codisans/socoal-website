@@ -22,7 +22,7 @@ export default function Login() {
       </Container>
       <Header
         title="Contacto"
-        description="Contactanos para más información."
+        description="Contáctanos para más información."
       />
       <Container className="my-24">
         <ContactForm className="max-w-3xl" />
