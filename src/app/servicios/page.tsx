@@ -59,7 +59,10 @@ export default async function Servicios() {
       <Container>
         <Navbar />
       </Container>
-      <Header title="Servicios" description="Servicios para tu negocio." />
+      <Header
+        title="Servicios"
+        description="Generamos valor sostenible en entornos exigentes."
+      />
       <ServiceCards services={services} />
       <ProfileList
         title="Compromiso profesional"
