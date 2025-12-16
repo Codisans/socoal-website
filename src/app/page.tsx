@@ -44,14 +44,14 @@ export default function Home() {
           <TextAndVideo
             heading="Más de 70 Años Brindando Soluciones"
             subheading="Presentación Corporativa"
-            description="Conoce a Socoal, una empresa que se dedica a la prestación de servicios industriales y municipales."
+            description="Conoce a Socoal, expertos en prestaciones de servicios en la Industria Minera y Municipal."
             body={
               <p className="mt-8 flex gap-4">
                 <Button variant="primary" href="/nosotros">
                   Nosotros
                 </Button>
-                <Button variant="secondary" href="/comunidad">
-                  Comunidad
+                <Button variant="secondary" href="/servicios">
+                  Servicios
                 </Button>
               </p>
             }
