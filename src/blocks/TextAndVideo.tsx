@@ -30,7 +30,7 @@ export function TextAndVideo({
           <Lead className="mt-6 max-w-3xl">{description}</Lead>
           {body}
         </div>
-        <div className="max-lg:order-first max-lg:max-w-lg">
+        <div className="max-lg:max-w-lg">
           <YoutubeEmbed videoId={videoId} posterImage={posterImage} />
         </div>
       </div>

@@ -50,8 +50,8 @@ export default function Home() {
                 <Button variant="primary" href="/nosotros">
                   Nosotros
                 </Button>
-                <Button variant="secondary" href="/presentacion-corporativa">
-                  Ver presentación
+                <Button variant="secondary" href="/comunidad">
+                  Comunidad
                 </Button>
               </p>
             }
