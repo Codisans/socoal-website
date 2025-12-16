@@ -8,6 +8,7 @@ export type ServiceCardProps = {
   name: string
   description: string
   items: string[]
+  image: string
 }
 
 export function ServiceCards({ services }: { services: ServiceCardProps[] }) {
@@ -37,7 +38,13 @@ export function ServiceCard({ service }: { service: ServiceCardProps }) {
           <p className="mt-2 text-sm/6 text-gray-950/75">
             {service.description}
           </p>
-          <div className="mt-8 flex items-center gap-4"></div>
+          <div className="mt-8 flex items-center gap-4">
+            <img
+              alt={service.name}
+              src={service.image}
+              className="aspect-video rounded-xl object-cover shadow-xl outline-1 -outline-offset-1 outline-black/10"
+            />
+          </div>
           {/* <div className="mt-8">
               <Button href={tier.href}>Start a free trial</Button>
             </div> */}

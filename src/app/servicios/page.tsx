@@ -19,7 +19,7 @@ const services = [
     slug: 'industriales-mineros',
     description:
       'Enfocados en operaciones dentro de faenas mineras e instalaciones industriales.',
-    href: '/servicios/mineria',
+    image: '/mining-3.jpg',
     items: [
       'Aseo industrial tecnificado',
       'Carguío de cargas varias en la gran minería',
@@ -35,7 +35,7 @@ const services = [
     slug: 'gestion-residuos',
     description:
       'Servicios asociados al manejo, transporte y disposición final de residuos.',
-    href: '/servicios/residuos',
+    image: '/mining-2.jpg',
     items: [
       'Construcción y operación de rellenos sanitarios',
       'Recolección y transporte de residuos domiciliarios',
@@ -45,9 +45,9 @@ const services = [
   {
     name: 'Servicios de Limpieza Urbana y Especializada',
     slug: 'limpieza-urbana',
+    image: '/mining-1.jpg',
     description:
       'Orientados a espacios públicos y entornos urbanos o industriales.',
-    href: '#',
     items: ['Barrido de calles especializado'],
   },
 ]
