@@ -5,8 +5,8 @@ import { Link } from './link'
 const variants = {
   primary: clsx(
     'inline-flex items-center justify-center px-4 py-[calc(--spacing(2)-1px)]',
-    'rounded-full border border-transparent bg-dark-blue shadow-md dark:bg-white dark:text-dark-blue',
-    'text-base font-medium whitespace-nowrap text-white',
+    'rounded-full border border-transparent bg-dark-blue shadow-md dark:bg-white',
+    'text-base font-medium whitespace-nowrap text-white dark:text-dark-blue',
     'data-disabled:bg-dark-blue data-disabled:opacity-40 data-hover:bg-blue data-hover:dark:bg-white/80',
   ),
   secondary: clsx(
@@ -14,7 +14,7 @@ const variants = {
     'rounded-full border border-transparent bg-white/15 shadow-md ring-1 ring-blue/15 dark:bg-white/10 dark:ring-white/40',
     'after:absolute after:inset-0 after:rounded-full after:shadow-[inset_0_0_2px_1px_#ffffff4d] dark:after:shadow-none',
     'text-base font-medium whitespace-nowrap text-dark-blue dark:text-white',
-    'data-disabled:bg-white/15 data-disabled:opacity-40 data-hover:bg-white/20 data-hover:dark:bg-white/80 data-hover:dark:text-blue',
+    'data-disabled:bg-white/15 data-disabled:opacity-40 data-hover:bg-white/20 data-hover:dark:bg-white/80 data-hover:dark:text-dark-blue',
   ),
   outline: clsx(
     'inline-flex items-center justify-center px-2 py-[calc(--spacing(1.5)-1px)]',

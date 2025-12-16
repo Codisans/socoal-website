@@ -1,7 +1,7 @@
 import { CardCarousel } from '@/blocks/CardCarousel'
 import { DarkBentoSection } from '@/blocks/DarkBentoSection'
 import { Hero } from '@/blocks/Hero'
-import { MediaSection } from '@/blocks/MediaSection'
+import { TextAndVideo } from '@/blocks/TextAndVideo'
 import { BentoCard } from '@/components/bento-card'
 import { Button } from '@/components/button'
 import { Container } from '@/components/container'
@@ -41,10 +41,22 @@ export default function Home() {
           <LogoCloud />
         </Container>
         <div className="bg-linear-to-b from-white from-50% to-gray-100 py-32">
-          <MediaSection
-            title="Socio Estratégico"
-            description="Transformamos desafíos operativos en resultados sostenibles."
-            image="/mining-1.jpg"
+          <TextAndVideo
+            heading="Presentación Corporativa"
+            subheading="Mineria"
+            description="Conoce a Socoal, una empresa que se dedica a la prestación de servicios industriales y municipales."
+            body={
+              <p className="mt-8 flex gap-4">
+                <Button variant="primary" href="/nosotros">
+                  Nosotros
+                </Button>
+                <Button variant="secondary" href="/presentacion-corporativa">
+                  Ver presentación
+                </Button>
+              </p>
+            }
+            posterImage="/mining-1.jpg"
+            videoId="-9QKCC8pFyU"
           />
           {/* <BentoSection title="Socio Estratégico" subheading="Mineria" rows={1}>
             <BentoCard
@@ -122,6 +134,11 @@ export default function Home() {
         <CardCarousel
           heading="Conoce a nuestros servicios"
           subheading="Servicios"
+          callToAction={{
+            description: 'Descubre más sobre nuestros servicios',
+            linkText: 'Ver más',
+            linkHref: '/servicios',
+          }}
           cards={[
             {
               img: '/mining-1.jpg',

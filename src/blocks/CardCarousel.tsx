@@ -198,7 +198,7 @@ function CallToAction({ description, linkText, linkHref }: CallToActionProps) {
       <div className="mt-2">
         <Link
           href={linkHref}
-          className="inline-flex items-center gap-2 text-sm/6 font-medium text-pink-600"
+          className="inline-flex items-center gap-2 text-sm/6 font-medium text-blue"
         >
           {linkText}
           <ArrowLongRightIcon className="size-5" />

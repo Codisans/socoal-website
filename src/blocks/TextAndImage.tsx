@@ -7,15 +7,17 @@ export function TextAndImage({
   description,
   body,
   image,
+  className,
 }: {
   heading: string
   subheading: string
   description: string
   body: React.ReactNode
   image: string
+  className?: string
 }) {
   return (
-    <Container className="mt-32">
+    <Container className={className}>
       <Subheading>{subheading}</Subheading>
       <Heading as="h3" className="mt-2">
         {heading}

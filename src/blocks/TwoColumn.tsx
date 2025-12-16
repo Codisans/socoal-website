@@ -26,7 +26,7 @@ export function TwoColumn({
         {items.map((item) => (
           <li key={item.title}>
             {item.title && (
-              <p className="text-2xl/8 font-medium tracking-tight text-blue">
+              <p className="font-serif text-2xl/8 font-bold tracking-tight text-dark-blue uppercase">
                 {item.title}
               </p>
             )}
