@@ -62,15 +62,18 @@ function MobileNav() {
             }}
             key={href}
           >
-            <Link href={href} className="text-base font-medium text-gray-950">
+            <Link
+              href={href}
+              className="text-base font-medium text-gray-950 dark:text-white"
+            >
               {label}
             </Link>
           </motion.div>
         ))}
       </div>
       <div className="absolute left-1/2 w-screen -translate-x-1/2">
-        <div className="absolute inset-x-0 top-0 border-t border-black/5" />
-        <div className="absolute inset-x-0 top-2 border-t border-black/5" />
+        <div className="absolute inset-x-0 top-0 border-t border-black/5 dark:border-white/10" />
+        <div className="absolute inset-x-0 top-2 border-t border-black/5 dark:border-white/10" />
       </div>
     </DisclosurePanel>
   )

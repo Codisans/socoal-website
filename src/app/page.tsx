@@ -26,7 +26,7 @@ export default function Home() {
           </>
         }
         description="Transformamos desafíos operativos en resultados sostenibles."
-        image="/oficina.webp"
+        image="/office.webp"
         buttons={
           <>
             <Button href="/contacto">Contactanos</Button>
@@ -120,7 +120,7 @@ export default function Home() {
         </DarkBentoSection>
 
         <CardCarousel
-          heading="Conoce a nuesros servicios"
+          heading="Conoce a nuestros servicios"
           subheading="Servicios"
           cards={[
             {
