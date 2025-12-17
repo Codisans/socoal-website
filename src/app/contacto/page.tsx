@@ -28,7 +28,7 @@ export default function Contacto() {
         <ContactForm className="max-w-3xl" />
       </Container>
 
-      <Container className="my-24">
+      <Container className="mt-24 lg:mb-16">
         <div className="flex w-full flex-row gap-4 sm:gap-8">
           <LeafletMap />
           <div className="w-max">
