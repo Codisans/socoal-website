@@ -109,50 +109,50 @@ export default function Home() {
             {
               img: '/servicios/aseo.webp',
               eyebrow: 'Servicios Industriales y Mineros',
-              title: 'Aseo industrial tecnificado',
+              title: 'Aseo Industrial Tecnificado',
             },
             {
               img: '/servicios/carga.webp',
               eyebrow: 'Servicios Industriales y Mineros',
-              title: 'Carguío de cargas varias en la gran minería',
+              title: 'Carguío de Cargas Varias en la Gran Minería',
             },
             {
               img: '/servicios/residuos-domiciliarios.webp',
               eyebrow: 'Gestión Integral de Residuos',
-              title: 'Recolección y transporte de residuos domiciliarios',
+              title: 'Recolección y Transporte de Residuos Domiciliarios',
               description: '+45 años de serivicio continuo',
             },
             {
               img: '/servicios/relleno-sanitario.webp',
               eyebrow: 'Gestión Integral de Residuos',
-              title: 'Construcción y operación de rellenos sanitarios',
+              title: 'Construcción y Operación de Rellenos Sanitarios',
               description: '+25 años de serivicio continuo',
             },
             {
               img: '/servicios/barrido.webp',
               eyebrow: 'Servicios de Limpieza Urbana y Especializada',
-              title: 'Barrido de calles especializado',
+              title: 'Barrido de Calles Especializado',
             },
             {
               img: '/servicios/montaje.webp',
               eyebrow: 'Servicios Industriales y Mineros',
-              title: 'Montaje industrial',
+              title: 'Montaje Industrial',
             },
             {
               img: '/servicios/bodega.webp',
               eyebrow: 'Servicios Industriales y Mineros',
-              title: 'Mantención y reparación de bodegas en la minería',
+              title: 'Mantención y Reparación de Bodegas en la Minería',
             },
             {
               img: '/servicios/residuos-peligrosos-3.webp',
               eyebrow: 'Servicios Industriales y Mineros',
               title:
-                'Construcción y operación de relleno de residuos peligrosos',
+                'Construcción y Operación de Relleno de Residuos Peligrosos',
             },
             {
               img: '/servicios/residuos-peligrosos-2.webp',
               eyebrow: 'Servicios Industriales y Mineros',
-              title: 'Manejo y retiro de residuos peligrosos',
+              title: 'Manejo y Retiro de Residuos Peligrosos',
             },
             {
               img: '/servicios/perforacion.webp',
