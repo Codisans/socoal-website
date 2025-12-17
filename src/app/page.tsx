@@ -10,8 +10,7 @@ import { LogoCloud } from '@/components/logo-cloud'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  description:
-    'Radiant helps you sell more by revealing sensitive information about your customers.',
+  description: 'Transformamos desafíos operativos en resultados sostenibles.',
 }
 
 export default function Home() {
@@ -103,9 +102,8 @@ export default function Home() {
           heading="Conoce nuestros servicios"
           subheading="Servicios"
           callToAction={{
-            description: 'Descubre más sobre nuestros servicios',
-            linkText: 'Ver más',
-            linkHref: '/servicios',
+            href: '/servicios',
+            text: 'Ver más',
           }}
           cards={[
             {

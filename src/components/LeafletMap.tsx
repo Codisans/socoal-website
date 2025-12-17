@@ -16,7 +16,8 @@ export default function LeafletMap() {
       await import('leaflet/dist/leaflet.css')
 
       // Fix default marker icon paths for Next.js
-      delete (L.Icon.Default.prototype as any)._getIconUrl
+      delete (L.Icon.Default.prototype as unknown as { _getIconUrl: unknown })
+        ._getIconUrl
       L.Icon.Default.mergeOptions({
         iconRetinaUrl:
           'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/images/marker-icon-2x.png',
@@ -26,20 +27,13 @@ export default function LeafletMap() {
           'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/images/marker-shadow.png',
       })
 
-      console.log('leaflet map imported')
-
       // Get the map container element
       const mapContainer = document.getElementById('map')
       if (!mapContainer) return
 
       // Check if the container already has a Leaflet map instance
       // @ts-expect-error - Leaflet adds _leaflet_id to DOM elements it initializes
-      if (mapContainer._leaflet_id) {
-        console.log(
-          'Map container already has Leaflet instance, skipping initialization',
-        )
-        return
-      }
+      if (mapContainer._leaflet_id) return
 
       const map = L.map('map', {
         center: [-22.4396, -68.8873],

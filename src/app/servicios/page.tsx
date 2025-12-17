@@ -114,7 +114,7 @@ export default async function Servicios() {
             </p>
           </div>
         }
-        image="/eco.png"
+        image="/eco.webp"
         containImage
       />
       <Testimonial

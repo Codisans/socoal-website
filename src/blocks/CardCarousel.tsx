@@ -2,9 +2,7 @@
 
 import { Button } from '@/components/button'
 import { Container } from '@/components/container'
-import { Link } from '@/components/link'
 import { Heading, Subheading } from '@/components/text'
-import { ArrowLongRightIcon } from '@heroicons/react/20/solid'
 import { clsx } from 'clsx'
 import {
   MotionValue,
@@ -14,14 +12,17 @@ import {
   useSpring,
   type HTMLMotionProps,
 } from 'framer-motion'
-import { useCallback, useLayoutEffect, useRef, useState } from 'react'
+import { useCallback, useLayoutEffect, useRef } from 'react'
 import useMeasure, { type RectReadOnly } from 'react-use-measure'
 
 export interface CardCarouselProps {
   cards: CarouselCard[]
   subheading: string
   heading: string
-  callToAction?: CallToActionProps
+  callToAction?: {
+    href: string
+    text: string
+  }
   className?: string
 }
 
@@ -35,11 +36,6 @@ export function CardCarousel({
   let scrollRef = useRef<HTMLDivElement | null>(null)
   let { scrollX } = useScroll({ container: scrollRef })
   let [setReferenceWindowRef, bounds] = useMeasure()
-  let [activeIndex, setActiveIndex] = useState(0)
-
-  useMotionValueEvent(scrollX, 'change', (x) => {
-    setActiveIndex(Math.floor(x / scrollRef.current!.children[0].clientWidth))
-  })
 
   function scrollTo(index: number) {
     let gap = 32
@@ -61,8 +57,8 @@ export function CardCarousel({
             </Heading>
           </div>
           {callToAction && (
-            <Button variant="primary" href={callToAction.linkHref}>
-              {callToAction.linkText}
+            <Button variant="primary" href={callToAction.href}>
+              {callToAction.text}
             </Button>
           )}
         </div>
@@ -176,23 +172,5 @@ function CarouselCard({
         </div>
       </div>
     </motion.div>
-  )
-}
-
-export interface CallToActionProps {
-  description: string
-  linkText: string
-  linkHref: string
-}
-
-function CallToAction({ description, linkText, linkHref }: CallToActionProps) {
-  return (
-    <Link
-      href={linkHref}
-      className="inline-flex items-center gap-2 text-sm/6 font-medium text-blue"
-    >
-      {linkText}
-      <ArrowLongRightIcon className="size-5" />
-    </Link>
   )
 }
