@@ -1,6 +1,8 @@
 'use client'
 import { useEffect, useRef } from 'react'
 
+const markerCoordinates: [number, number] = [-22.4396, -68.8873]
+
 export default function LeafletMap() {
   const mapRef = useRef<unknown>(null)
 
@@ -12,6 +14,17 @@ export default function LeafletMap() {
       const L = await import('leaflet')
       // @ts-expect-error - CSS import
       await import('leaflet/dist/leaflet.css')
+
+      // Fix default marker icon paths for Next.js
+      delete (L.Icon.Default.prototype as any)._getIconUrl
+      L.Icon.Default.mergeOptions({
+        iconRetinaUrl:
+          'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/images/marker-icon-2x.png',
+        iconUrl:
+          'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/images/marker-icon.png',
+        shadowUrl:
+          'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/images/marker-shadow.png',
+      })
 
       console.log('leaflet map imported')
 
@@ -28,14 +41,8 @@ export default function LeafletMap() {
         return
       }
 
-      // const marker = new L.Icon({
-      //   iconUrl: '/mining-1.png',
-      //   iconSize: [32, 32],
-      //   iconAnchor: [16, 16],
-      // })
-
-      mapRef.current = L.map('map', {
-        center: [-33.4489, -70.6693],
+      const map = L.map('map', {
+        center: [-22.4396, -68.8873],
         zoom: 10,
         zoomControl: false,
         layers: [
@@ -44,6 +51,11 @@ export default function LeafletMap() {
           ),
         ],
       })
+
+      // Add marker at the specified coordinates
+      L.marker(markerCoordinates).addTo(map)
+
+      mapRef.current = map
     }
 
     initMap()

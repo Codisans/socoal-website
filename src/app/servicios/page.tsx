@@ -89,11 +89,7 @@ export default async function Servicios() {
       />
       <TextAndImage
         className="mt-28"
-        heading={
-          <span className="block max-w-5xl">
-            Avanzamos hacia una operación más limpia y circular
-          </span>
-        }
+        heading="Avanzamos hacia una operación más limpia y circular"
         // subheading="Comunidad"
         level="h1"
         body={

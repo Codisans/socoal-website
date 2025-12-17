@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   description: 'Contactanos para más información.',
 }
 
-export default function Login() {
+export default function Contacto() {
   return (
     <main className="overflow-hidden">
       <GradientBackground />
@@ -34,9 +34,10 @@ export default function Login() {
           <div className="w-max">
             <Subheading>Dirección</Subheading>
             <p className="mt-8">
-              11111 Alguna Calle <br />
-              Calama <br />
-              Región de Antofagasta <br />
+              Camino Chiu Chiu Lote B, <br />
+              Puerto Seco, <br />
+              Calama, <br />
+              Región de Antofagasta, <br />
               Chile
             </p>
           </div>

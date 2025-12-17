@@ -12,7 +12,7 @@ export function TextAndImage({
   level = 'h3',
   className,
 }: {
-  heading: string | React.ReactNode
+  heading: string
   subheading?: string
   description?: string
   body: React.ReactNode
@@ -24,7 +24,7 @@ export function TextAndImage({
   return (
     <Container className={className}>
       {subheading && <Subheading>{subheading}</Subheading>}
-      <Heading as={level} className="mt-2">
+      <Heading as={level} className="mt-2 max-w-5xl">
         {heading}
       </Heading>
       {description && <Lead className="mt-6 max-w-3xl">{description}</Lead>}
