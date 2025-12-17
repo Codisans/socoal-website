@@ -168,7 +168,7 @@ export function Footer() {
         <div className="flex items-center justify-end gap-2 text-xs/tight">
           <span className="mt-0.75 block">Sitio hecho por</span>
 
-          <Link href="https://codisans.com?ref=socoal" target="_blank">
+          <Link href="https://codisans.com" target="_blank">
             <span className="sr-only">Codisans</span>
             <svg
               className="h-4 w-24"
