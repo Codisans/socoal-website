@@ -19,7 +19,7 @@ export default function Home() {
       <Hero
         title={
           <>
-            Mas que un proveedor,
+            Más que un proveedor,
             <br />
             un socio estratégico.
           </>
