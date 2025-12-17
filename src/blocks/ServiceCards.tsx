@@ -32,7 +32,10 @@ export function ServiceCard({ service }: { service: ServiceCardProps }) {
     <div className="-m-2 grid grid-cols-1 rounded-4xl shadow-[inset_0_0_2px_1px_#ffffff4d] ring-1 ring-black/5 max-lg:mx-auto max-lg:w-full max-lg:max-w-md">
       <div className="grid grid-cols-1 rounded-4xl p-2 shadow-md shadow-black/5">
         <div className="rounded-3xl bg-white p-10 pb-9 shadow-2xl ring-1 ring-black/5">
-          <Heading className="text-2xl!" as="h3">
+          <Heading
+            className={`text-2xl! ${service.name.length < 30 ? 'lg:pr-4' : ''}`}
+            as="h3"
+          >
             {service.name}
           </Heading>
           <p className="mt-2 text-sm/6 text-gray-950/75">

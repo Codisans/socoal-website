@@ -19,7 +19,7 @@ const services = [
     slug: 'industriales-mineros',
     description:
       'Enfocados en operaciones dentro de faenas mineras e instalaciones industriales.',
-    image: '/servicio-mineros.webp',
+    image: '/servicio-industrial.webp',
     items: [
       'Aseo industrial tecnificado',
       'Carguío de cargas varias en la gran minería',
