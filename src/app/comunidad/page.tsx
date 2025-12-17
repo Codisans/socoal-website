@@ -53,7 +53,7 @@ export default function Comunidad() {
             </p>
           </div>
         }
-        image="/company/5.png"
+        image="/comunidad.webp"
       />
       <Footer />
     </main>

@@ -169,7 +169,7 @@ function CarouselCard({
       className="relative flex aspect-9/16 w-72 shrink-0 snap-start scroll-ml-(--scroll-padding) flex-col justify-end overflow-hidden rounded-3xl sm:aspect-3/4 sm:w-96"
     >
       <img
-        alt=""
+        alt={title}
         src={img}
         className="absolute inset-x-0 top-0 aspect-square w-full object-cover"
       />

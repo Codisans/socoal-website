@@ -19,7 +19,7 @@ const services = [
     slug: 'industriales-mineros',
     description:
       'Enfocados en operaciones dentro de faenas mineras e instalaciones industriales.',
-    image: '/mining-3.jpg',
+    image: '/servicio-mineros.webp',
     items: [
       'Aseo industrial tecnificado',
       'Carguío de cargas varias en la gran minería',
@@ -35,7 +35,7 @@ const services = [
     slug: 'gestion-residuos',
     description:
       'Servicios asociados al manejo, transporte y disposición final de residuos.',
-    image: '/mining-2.jpg',
+    image: '/servicio-residuos.webp',
     items: [
       'Construcción y operación de rellenos sanitarios',
       'Recolección y transporte de residuos domiciliarios',
@@ -45,7 +45,7 @@ const services = [
   {
     name: 'Servicios de Limpieza Urbana y Especializada',
     slug: 'limpieza-urbana',
-    image: '/mining-1.jpg',
+    image: '/servicio-limpieza.webp',
     description:
       'Orientados a espacios públicos y entornos urbanos o industriales.',
     items: ['Barrido de calles especializado'],
@@ -72,24 +72,24 @@ export default async function Servicios() {
           {
             name: 'ISO 9001',
             description: 'Certificación de calidad',
-            img: '/company/iso-9001.png',
+            img: '/iso//iso-9001.png',
           },
           {
             name: 'ISO 14001',
             description: 'Certificación de medio ambiente',
-            img: '/company/iso-14001.png',
+            img: '/iso/iso-14001.png',
           },
           {
             name: 'ISO 45001',
             description: 'Certificación de seguridad',
-            img: '/company/iso-45001.png',
+            img: '/iso/iso-45001.png',
           },
         ]}
       />
       <Testimonial
         className="mt-36 lg:mt-52"
-        image="/company/1.png"
-        quote="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos."
+        image="/tito-alvarez.webp"
+        quote="No se asombre de nuestro éxito si no conoce el esfuerzo, el sacrificio y el trabajo bien hecho que hay detrás de esta empresa"
         name="Tito Alvarez"
         title="Fundador de SOCOAL"
       />

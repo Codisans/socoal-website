@@ -55,7 +55,7 @@ export default function Home() {
                 </Button>
               </p>
             }
-            posterImage="/mining-1.jpg"
+            posterImage="/familia.webp"
             videoId="-9QKCC8pFyU"
           />
         </div>
@@ -70,7 +70,7 @@ export default function Home() {
             title="Cultura de prevención"
             description="Aplicamos estrictos protocolos de prevención y promovemos una cultura de seguridad en toda la organización."
             graphic={
-              <div className="h-80 bg-[url(/mining-1.jpg)] bg-cover bg-center" />
+              <div className="h-80 bg-[url(/seguridad.webp)] bg-cover bg-center" />
             }
             fade={['bottom']}
             className="lg:col-span-2 lg:rounded-bl-4xl"
@@ -81,7 +81,7 @@ export default function Home() {
             title="Optimización continua"
             description="Optimizamos permanentemente procesos y recursos para garantizar resultados oportunos y eficientes."
             graphic={
-              <div className="absolute inset-0 bg-[url(/mining-1.jpg)] bg-cover bg-center" />
+              <div className="absolute inset-0 bg-[url(/eficiencia.webp)] bg-cover bg-center" />
             }
             fade={['bottom']}
             className="lg:col-span-2"
@@ -92,7 +92,7 @@ export default function Home() {
             title="Cumplimiento riguroso"
             description="Cumplimos rigurosamente los requisitos solicitados por nuestros clientes."
             graphic={
-              <div className="absolute inset-0 bg-[url(/mining-1.jpg)] bg-cover bg-center" />
+              <div className="absolute inset-0 bg-[url(/eficacia.webp)] bg-cover bg-center" />
             }
             fade={['bottom']}
             className="max-lg:rounded-b-4xl lg:col-span-2 lg:rounded-br-4xl"
@@ -109,58 +109,58 @@ export default function Home() {
           }}
           cards={[
             {
-              img: '/mining-1.jpg',
+              img: '/servicios/aseo.webp',
               eyebrow: 'Servicios Industriales y Mineros',
               title: 'Aseo industrial tecnificado',
             },
             {
-              img: '/mining-2.jpg',
+              img: '/servicios/carga.webp',
               eyebrow: 'Servicios Industriales y Mineros',
               title: 'Carguío de cargas varias en la gran minería',
             },
             {
-              img: '/mining-3.jpg',
+              img: '/servicios/montaje.webp',
               eyebrow: 'Servicios Industriales y Mineros',
               title: 'Montaje industrial',
             },
             {
-              img: '/mining-4.jpg',
+              img: '/servicios/bodega.webp',
               eyebrow: 'Servicios Industriales y Mineros',
               title: 'Mantención y reparación de bodegas en la minería',
             },
             {
-              img: '/mining-1.jpg',
+              img: '/servicios/residuos-peligrosos-3.webp',
               eyebrow: 'Servicios Industriales y Mineros',
               title:
                 'Construcción y operación de relleno de residuos peligrosos',
             },
             {
-              img: '/mining-2.jpg',
+              img: '/servicios/residuos-peligrosos-2.webp',
               eyebrow: 'Servicios Industriales y Mineros',
               title: 'Manejo y retiro de residuos peligrosos',
             },
             {
-              img: '/mining-3.jpg',
+              img: '/servicios/perforacion.webp',
               eyebrow: 'Servicios Industriales y Mineros',
               title: 'Perforación',
             },
             {
-              img: '/mining-4.jpg',
+              img: '/servicios/relleno-sanitario.webp',
               eyebrow: 'Gestión Integral de Residuos',
               title: 'Construcción y operación de rellenos sanitarios',
             },
             {
-              img: '/mining-1.jpg',
+              img: '/servicios/residuos-domiciliarios.webp',
               eyebrow: 'Gestión Integral de Residuos',
               title: 'Recolección y transporte de residuos domiciliarios',
             },
             {
-              img: '/mining-2.jpg',
+              img: '/servicios/recoleccion-residuos.webp',
               eyebrow: 'Gestión Integral de Residuos',
               title: 'Recolección y transporte de residuos no peligrosos',
             },
             {
-              img: '/mining-3.jpg',
+              img: '/servicios/barrido.webp',
               eyebrow: 'Servicios de Limpieza Urbana y Especializada',
               title: 'Barrido de calles especializado',
             },
