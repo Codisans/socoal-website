@@ -79,7 +79,6 @@ export function CardCarousel({
             onClick={() => scrollTo(cardIndex)}
           />
         ))}
-        <div className="w-2xl shrink-0 sm:w-216" />
       </div>
       <Container className="mt-16">
         <div className="flex justify-between">
