@@ -26,7 +26,7 @@ export default function Home() {
           </>
         }
         description="Transformamos desafíos operativos en resultados sostenibles."
-        image="/office.webp"
+        image="/hero-cover.webp"
         buttons={
           <>
             <Button href="/contacto">Contáctanos</Button>
@@ -55,13 +55,13 @@ export default function Home() {
                 </Button>
               </p>
             }
-            posterImage="/familia.webp"
+            posterImage="/nosotros-2.webp"
             videoId="-9QKCC8pFyU"
           />
         </div>
         <DarkBentoSection
-          title="Socio Estratégico"
-          subheading="Minería"
+          title="Excelencia Operativa"
+          subheading="Socoal SpA"
           rows={1}
         >
           <BentoCard
@@ -119,6 +119,23 @@ export default function Home() {
               title: 'Carguío de cargas varias en la gran minería',
             },
             {
+              img: '/servicios/residuos-domiciliarios.webp',
+              eyebrow: 'Gestión Integral de Residuos',
+              title: 'Recolección y transporte de residuos domiciliarios',
+              description: '+45 años de serivicio continuo',
+            },
+            {
+              img: '/servicios/relleno-sanitario.webp',
+              eyebrow: 'Gestión Integral de Residuos',
+              title: 'Construcción y operación de rellenos sanitarios',
+              description: '+25 años de serivicio continuo',
+            },
+            {
+              img: '/servicios/barrido.webp',
+              eyebrow: 'Servicios de Limpieza Urbana y Especializada',
+              title: 'Barrido de calles especializado',
+            },
+            {
               img: '/servicios/montaje.webp',
               eyebrow: 'Servicios Industriales y Mineros',
               title: 'Montaje industrial',
@@ -143,26 +160,6 @@ export default function Home() {
               img: '/servicios/perforacion.webp',
               eyebrow: 'Servicios Industriales y Mineros',
               title: 'Perforación',
-            },
-            {
-              img: '/servicios/relleno-sanitario.webp',
-              eyebrow: 'Gestión Integral de Residuos',
-              title: 'Construcción y operación de rellenos sanitarios',
-            },
-            {
-              img: '/servicios/residuos-domiciliarios.webp',
-              eyebrow: 'Gestión Integral de Residuos',
-              title: 'Recolección y transporte de residuos domiciliarios',
-            },
-            {
-              img: '/servicios/recoleccion-residuos.webp',
-              eyebrow: 'Gestión Integral de Residuos',
-              title: 'Recolección y transporte de residuos no peligrosos',
-            },
-            {
-              img: '/servicios/barrido.webp',
-              eyebrow: 'Servicios de Limpieza Urbana y Especializada',
-              title: 'Barrido de calles especializado',
             },
           ]}
         />

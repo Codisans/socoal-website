@@ -1,9 +1,9 @@
 'use client'
 
+import { Button } from '@/components/button'
 import { Container } from '@/components/container'
 import { Link } from '@/components/link'
 import { Heading, Subheading } from '@/components/text'
-import * as Headless from '@headlessui/react'
 import { ArrowLongRightIcon } from '@heroicons/react/20/solid'
 import { clsx } from 'clsx'
 import {
@@ -23,7 +23,6 @@ export interface CardCarouselProps {
   heading: string
   callToAction?: CallToActionProps
   className?: string
-  showDots?: boolean
 }
 
 export function CardCarousel({
@@ -32,7 +31,6 @@ export function CardCarousel({
   heading,
   callToAction,
   className,
-  showDots = true,
 }: CardCarouselProps) {
   let scrollRef = useRef<HTMLDivElement | null>(null)
   let { scrollX } = useScroll({ container: scrollRef })
@@ -52,11 +50,21 @@ export function CardCarousel({
   return (
     <div className={clsx('overflow-hidden pt-32', className)}>
       <Container>
-        <div ref={setReferenceWindowRef}>
-          <Subheading>{subheading}</Subheading>
-          <Heading as="h3" className="mt-2">
-            {heading}
-          </Heading>
+        <div
+          ref={setReferenceWindowRef}
+          className="flex flex-row items-end justify-between"
+        >
+          <div>
+            <Subheading>{subheading}</Subheading>
+            <Heading as="h3" className="mt-2">
+              {heading}
+            </Heading>
+          </div>
+          {callToAction && (
+            <Button variant="primary" href={callToAction.linkHref}>
+              {callToAction.linkText}
+            </Button>
+          )}
         </div>
       </Container>
       <div
@@ -68,10 +76,11 @@ export function CardCarousel({
           '[--scroll-padding:max(--spacing(6),calc((100vw-(var(--container-2xl)))/2))] lg:[--scroll-padding:max(--spacing(8),calc((100vw-(var(--container-7xl)))/2))]',
         ])}
       >
-        {cards.map(({ img, eyebrow, title }, cardIndex) => (
+        {cards.map(({ img, eyebrow, title, description }, cardIndex) => (
           <CarouselCard
             key={cardIndex}
             eyebrow={eyebrow}
+            description={description}
             title={title}
             img={img}
             bounds={bounds}
@@ -80,28 +89,6 @@ export function CardCarousel({
           />
         ))}
       </div>
-      <Container className="mt-16">
-        <div className="flex justify-between">
-          {callToAction && <CallToAction {...callToAction} />}
-          {showDots && (
-            <div className="hidden sm:flex sm:gap-2">
-              {cards.map(({ title }, cardIndex) => (
-                <Headless.Button
-                  key={cardIndex}
-                  onClick={() => scrollTo(cardIndex)}
-                  data-active={activeIndex === cardIndex ? true : undefined}
-                  aria-label={`Scroll to card from ${title}`}
-                  className={clsx(
-                    'size-2.5 rounded-full border border-transparent bg-gray-300 transition',
-                    'data-active:bg-gray-400 data-hover:bg-gray-400',
-                    'forced-colors:data-active:bg-[Highlight] forced-colors:data-focus:outline-offset-4',
-                  )}
-                />
-              ))}
-            </div>
-          )}
-        </div>
-      </Container>
     </div>
   )
 }
@@ -110,11 +97,13 @@ export interface CarouselCard {
   img: string
   eyebrow: string
   title: string
+  description?: string
 }
 
 function CarouselCard({
   eyebrow,
   title,
+  description,
   img,
   bounds,
   scrollX,
@@ -123,6 +112,7 @@ function CarouselCard({
   img: string
   eyebrow: string
   title: string
+  description?: string
   bounds: RectReadOnly
   scrollX: MotionValue<number>
 } & HTMLMotionProps<'div'>) {
@@ -176,12 +166,15 @@ function CarouselCard({
         aria-hidden="true"
         className="absolute inset-0 rounded-3xl bg-linear-to-t from-black from-[calc(7/16*100%)] ring-1 ring-gray-950/10 ring-inset sm:from-25%"
       />
-      <figure className="relative p-10">
+      <div className="relative p-10">
         <p className="relative text-xl/7 text-white">{title}</p>
+        {description && (
+          <p className="mt-2 text-sm/6 font-medium text-white">{description}</p>
+        )}
         <div className="mt-6 border-t border-white/20 pt-6">
           <p className="text-sm/6 font-medium text-white">{eyebrow}</p>
         </div>
-      </figure>
+      </div>
     </motion.div>
   )
 }
@@ -194,17 +187,12 @@ export interface CallToActionProps {
 
 function CallToAction({ description, linkText, linkHref }: CallToActionProps) {
   return (
-    <div>
-      <p className="max-w-sm text-sm/6 text-gray-600">{description}</p>
-      <div className="mt-2">
-        <Link
-          href={linkHref}
-          className="inline-flex items-center gap-2 text-sm/6 font-medium text-blue"
-        >
-          {linkText}
-          <ArrowLongRightIcon className="size-5" />
-        </Link>
-      </div>
-    </div>
+    <Link
+      href={linkHref}
+      className="inline-flex items-center gap-2 text-sm/6 font-medium text-blue"
+    >
+      {linkText}
+      <ArrowLongRightIcon className="size-5" />
+    </Link>
   )
 }

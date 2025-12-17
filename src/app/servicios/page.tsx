@@ -2,6 +2,7 @@ import { Header } from '@/blocks/Header'
 import { ProfileList } from '@/blocks/ProfileList'
 import { ServiceCards } from '@/blocks/ServiceCards'
 import { Testimonial } from '@/blocks/Testimonial'
+import { TextAndImage } from '@/blocks/TextAndImage'
 import { Container } from '@/components/container'
 import { Footer } from '@/components/footer'
 import { GradientBackground } from '@/components/gradient'
@@ -86,11 +87,45 @@ export default async function Servicios() {
           },
         ]}
       />
+      <TextAndImage
+        className="mt-28"
+        heading={
+          <span className="block max-w-5xl">
+            Avanzamos hacia una operación más limpia y circular
+          </span>
+        }
+        // subheading="Comunidad"
+        level="h1"
+        body={
+          <div>
+            <p>
+              En Socoal trabajamos de manera transversal en todas las áreas de
+              nuestra organización para alinear objetivos, potenciar la economía
+              circular y generar valor sostenible en entornos exigentes. Nuestro
+              compromiso está alineado con los principios de la Agenda 2030 de
+              Chile, promoviendo una operación más limpia, eficiente y
+              responsable.
+            </p>
+            <p className="mt-8">
+              Como gestores autorizados de la Ley REP en la ciudad de Calama,
+              contribuimos activamente a la correcta gestión y valorización de
+              residuos, impulsando una minería y gestión urbana más verde y
+              circular, con impacto positivo en el entorno y la comunidad
+            </p>
+            <p className="mt-8">
+              Sustentabilidad que se gestiona hoy, para el futuro que queremos
+              construir.
+            </p>
+          </div>
+        }
+        image="/eco.png"
+        containImage
+      />
       <Testimonial
-        className="mt-36 lg:mt-52"
+        className="mt-48 mb-0 lg:mt-52"
         image="/tito-alvarez.webp"
         quote="No se asombre de nuestro éxito si no conoce el esfuerzo, el sacrificio y el trabajo bien hecho que hay detrás de esta empresa"
-        name="Tito Alvarez"
+        name="Tito Álvarez"
         title="Fundador de SOCOAL"
       />
       <Footer />
