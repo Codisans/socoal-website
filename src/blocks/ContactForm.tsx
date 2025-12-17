@@ -5,10 +5,6 @@ import emailjs from '@emailjs/browser'
 import clsx from 'clsx'
 import React, { useId, useRef, useState } from 'react'
 
-const serviceId = 'service_3sbzhxq'
-const templateId = 'template_wqfbufw'
-const publicKey = 'xyWeNYY19Zp1T84Qz'
-
 interface FormData {
   name: string
   email: string
@@ -76,6 +72,10 @@ export function ContactForm({
     }
 
     setIsSubmitting(true)
+
+    const serviceId = 'service_3sbzhxq'
+    const templateId = 'template_wqfbufw'
+    const publicKey = 'xyWeNYY19Zp1T84Qz'
 
     emailjs
       .sendForm(serviceId, templateId, form.current, {
