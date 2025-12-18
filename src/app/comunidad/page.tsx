@@ -7,7 +7,8 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: 'Comunidad',
-  description: 'Conoce a nuestra comunidad de clientes y colaboradores.',
+  description:
+    'Para la familia Socoal, es un orgullo mantener un vínculo sólido con la ciudad que nos vio nacer y en la que continuamos desarrollando nuestras actividades.',
 }
 
 export default function Comunidad() {

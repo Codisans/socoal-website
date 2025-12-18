@@ -9,7 +9,7 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: 'Nosotros',
-  description: 'Conoce a nuestra empresa y a nuestro equipo de trabajo.',
+  description: 'Conoce a nuestra empresa y los valores que nos guían.',
 }
 
 function Header() {
