@@ -42,7 +42,7 @@ export default function Comunidad() {
               Además, estamos abiertos a establecer alianzas estratégicas con
               distintas entidades locales para impulsar proyectos que beneficien
               a la ciudadanía. Pertenecemos a la Corporación de Desarrollo de la
-              Provincia de El Loa, "Proloa".
+              Provincia de El Loa, &ldquo;Proloa&rdquo;.
             </p>
             <p className="mt-8">
               En Socoal estamos convencidos de que el progreso se construye en
