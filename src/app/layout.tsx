@@ -1,3 +1,4 @@
+import { SubNav } from '@/components/sub-nav'
 import '@/styles/tailwind.css'
 import type { Metadata } from 'next'
 import { League_Spartan } from 'next/font/google'
@@ -103,7 +104,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="es" className={`${leagueSpartan.variable} ${gidole.variable}`}>
-      <body className="text-gray-950 antialiased">{children}</body>
+      <body className="text-gray-950 antialiased">
+        <SubNav />
+        {children}
+      </body>
     </html>
   )
 }
