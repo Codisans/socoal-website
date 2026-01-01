@@ -5,7 +5,7 @@ import { Testimonial } from '@/blocks/Testimonial'
 import { TextAndImage } from '@/blocks/TextAndImage'
 import { Container } from '@/components/container'
 import { Footer } from '@/components/footer'
-import { GradientBackground } from '@/components/gradient'
+// import { GradientBackground } from '@/components/gradient'
 import { Navbar } from '@/components/navbar'
 import type { Metadata } from 'next'
 
@@ -56,7 +56,7 @@ const services = [
 export default async function Servicios() {
   return (
     <main className="overflow-hidden">
-      <GradientBackground />
+      {/* <GradientBackground /> */}
       <Container>
         <Navbar />
       </Container>

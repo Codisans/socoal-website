@@ -2,7 +2,7 @@ import { TwoColumn } from '@/blocks/TwoColumn'
 import { AnimatedNumber } from '@/components/animated-number'
 import { Container } from '@/components/container'
 import { Footer } from '@/components/footer'
-import { GradientBackground } from '@/components/gradient'
+// import { GradientBackground } from '@/components/gradient'
 import { Navbar } from '@/components/navbar'
 import { Heading, Lead, Subheading } from '@/components/text'
 import type { Metadata } from 'next'
@@ -102,7 +102,7 @@ function Header() {
 export default function Nosotros() {
   return (
     <main className="overflow-hidden">
-      <GradientBackground />
+      {/* <GradientBackground /> */}
       <Container>
         <Navbar />
       </Container>

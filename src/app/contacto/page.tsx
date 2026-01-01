@@ -2,7 +2,7 @@ import { ContactForm } from '@/blocks/ContactForm'
 import { Header } from '@/blocks/Header'
 import { Container } from '@/components/container'
 import { Footer } from '@/components/footer'
-import { GradientBackground } from '@/components/gradient'
+// import { GradientBackground } from '@/components/gradient'
 import LeafletMap from '@/components/LeafletMap'
 import { Navbar } from '@/components/navbar'
 import { Subheading } from '@/components/text'
@@ -16,7 +16,7 @@ export const metadata: Metadata = {
 export default function Contacto() {
   return (
     <main className="overflow-hidden">
-      <GradientBackground />
+      {/* <GradientBackground /> */}
       <Container>
         <Navbar />
       </Container>
